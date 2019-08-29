@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* __________________________
+-------Utility Styles-------------- */
+
+body {
+  font-family: 'roboto', Courier, monospace;
+}
+
+header h1 {
+  /* text-align: center; */
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* __________________________
+-------Main Styles-------------- */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
