@@ -4,24 +4,24 @@ Main Styles
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #000;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
 }
 ul {
-    list-style: none;
+	list-style: none;
 }
 a {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 p {
-    margin: 10px 0;
-    padding: 1em;
+	margin: 10px 0;
+	padding: 1em;
 }
 h1,
 h2,
@@ -29,19 +29,19 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+	color: #000;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
 }
 .btn {
-    font-size: 17px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: #333;
-    border: none;
-    padding: 13px 20px;
-    cursor: pointer;
+	font-size: 17px;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #333;
+	border: none;
+	padding: 13px 20px;
+	cursor: pointer;
 }
 
 /*------------------------------------
@@ -49,63 +49,63 @@ BODY STYLES
 ------------------------------------*/
 
 #container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    max-width: 1000px;
-    margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 #menu {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    background: #666;
-    /* display: flex; */
+	grid-column: 1/4;
+	grid-row: 1/2;
+	background: #666;
+	/* display: flex; */
 }
 #menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem 0;
-    background: #222;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem 0;
+	background: #222;
 }
 #header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 2/3;
-    background: #666;
-    padding: 2rem 0;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row: 2/3;
+	background: #666;
+	padding: 2rem 0;
 }
 #login {
-    grid-column: 2/4;
-    position: relative;
-    text-align: center;
+	grid-column: 2/4;
+	position: relative;
+	text-align: center;
 }
 .img-1 {
-    max-width: 100%;
-    margin-bottom: 1em;
+	max-width: 100%;
+	margin-bottom: 1em;
 }
 #sidebar {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background: #D9E5F3;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	background: #D9E5F3;
 }
 #sidebar h1 {
-    margin-top: 1em
+	margin-top: 1em
 }
 #main {
-    grid-column: 2/4;
-    grid-row: 3/4;
-    background: #DAE3E5;
-    /*    border:solid #000 2px;*/
+	grid-column: 2/4;
+	grid-row: 3/4;
+	background: #DAE3E5;
+	/*    border:solid #000 2px;*/
 }
 #social {
-    grid-column: 1/4;
-    border: #000 solid 2px;
-    background: #666;
+	grid-column: 1/4;
+	border: #000 solid 2px;
+	background: #666;
 }
 #social ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem 0;
-    background: #222;
-    color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem 0;
+	background: #222;
+	color: #fff;
 }
