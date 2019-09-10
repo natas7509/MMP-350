@@ -1,0 +1,53 @@
+/* ----------------------------
+Main Styles
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#container {
+  display: grid;
+  grid-row-gap: 1em;
+    max-width: 1200px;
+  grid-template-columns:  2fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main menu"
+        
+ margin: 0 auto;
+}
+
+#title {grid-area:header;} 
+#header {grid-area:header;} 
+#main {grid-area:header;} 
+
+#sidebar{grid-area:sidebar;} 
+#footer{grid-area:footer;} 
+
+.img-1 {
+  width: 100%;
+}
+
