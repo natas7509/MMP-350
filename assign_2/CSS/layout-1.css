@@ -25,15 +25,43 @@ a {
 }
 
 p {
-  margin: 10px 0;
+      margin: 10px 0;
+    padding:1em;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+  
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #333;
+  border: none;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+
+/*------------------------------------
+BODY STYLES
+------------------------------------*/
 
 #container {
   display: grid;
-  grid-row-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1000px;
-    
+    grid-gap:1em;
+  max-width: 1000px; 
   margin: 0 auto;
 }
 
@@ -51,9 +79,6 @@ p {
   background: #222;
 }
 
-.img-1 {
-  width: 100%;
-}
 
 #header {
   grid-column-start: 1;
@@ -66,47 +91,32 @@ p {
 
 #login {
     
-/*
-    display: grid;
-    grid-template-rows: 3/4;
-*/
-
-  grid-column: 2/3;
+  grid-column: 2/4;
   position: relative;
-
-
-  /* border: #000 solid 2px; */
   text-align: center;
+    
+}
+
+.img-1 {
+    max-width: 100%;
+    margin-bottom:1em;
 }
 
 #sidebar {
   grid-column: 1/2;
   grid-row: 3/4;
-}
-.btn {
-  /* display: inline-block; */
-  font-size: 17px;
-  /* position: absolute; */
-  /* bottom: 12%; */
-  justify-content: center;
-  align-items: center;
-
-  color: #fff;
-  background: #333;
-  border: none;
-  padding: 13px 20px;
-  cursor: pointer;
+    background:#D9E5F3; 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #000;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+#sidebar h1 {
+     margin-top:1em   
+}
+
+#main {
+    grid-column: 2/4;
+    grid-row: 3/4;
+     background:#DAE3E5;
+/*    border:solid #000 2px;*/
 }
 
 #social {
@@ -121,3 +131,5 @@ h6 {
   background: #222;
   color: #fff;
 }
+
+

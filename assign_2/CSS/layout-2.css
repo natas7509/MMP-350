@@ -52,13 +52,6 @@ p {
 }
 
 
-
-.img-1 {
-  width: 100%;
-}
-
-
-
 #header {
   grid-column-start: 1;
   grid-column-end: 4;

@@ -37,7 +37,7 @@ p {
         "header header"
         "main menu"
         
- margin: 0 auto;
+/* margin: 0 auto;*/
 }
 
 #title {grid-area:header;} 
