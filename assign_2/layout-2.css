@@ -1,0 +1,136 @@
+/* ----------------------------
+Main Styles
+------------------------------ */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  margin: 10px 0;
+  padding: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+}
+.btn {
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #333;
+  border: none;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.image-caption {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #000;
+}
+
+#main h2 {
+  padding-top: 1em;
+}
+#main p {
+  padding-top: 1em;
+  text-align: center;
+}
+
+/*------------------------------------
+BODY STYLES
+------------------------------------*/
+
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-areas:
+    "header header nav"
+    "main main sidebar"
+    "login login login"
+    "social social social";
+}
+#header {
+  grid-area: header;
+  border: solid 1px #000;
+  background: #666;
+  padding: 2em 0;
+}
+
+#menu {
+  grid-area: nav;
+  border: solid 1px #000;
+  /*  padding: 2rem 0;*/
+  background: #222;
+}
+#menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  background: #222;
+}
+
+#main {
+  grid-area: main;
+  background: #f4f4f4;
+}
+
+#login {
+  grid-area: login;
+  text-align: center;
+  border: solid 1px #222;
+}
+
+#sidebar {
+  grid-area: sidebar;
+  background: #d9e5f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#social {
+  grid-area: social;
+  border: #000 solid 2px;
+  background: #666;
+}
+
+#social ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  background: #222;
+  color: #fff;
+}
