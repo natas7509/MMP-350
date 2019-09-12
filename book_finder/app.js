@@ -9,9 +9,9 @@ function Book(title, author, isbn) {
 function UI() {}
 // Add book to list
 UI.prototype.addBookToList = function(book) {
-  const list = document.getElementById('book-list');
+  const list = document.getElementById("book-list");
   // Create tr element
-  const row = document.createElement('tr');
+  const row = document.createElement("tr");
   // Insert cols
   row.innerHTML = `
     <td>${book.title}</td>
@@ -26,42 +26,42 @@ UI.prototype.addBookToList = function(book) {
 // Show alert
 UI.prototype.showAlert = function(message, className) {
   // Create Div
-  const div = document.createElement('div');
+  const div = document.createElement("div");
   // Add Classes
   div.className = `alert ${className}`;
   // Add Text
   div.appendChild(document.createTextNode(message));
   // Get Parent
-  const container = document.querySelector('.container');
-  const form = document.querySelector('#book-form');
+  const container = document.querySelector(".container");
+  const form = document.querySelector("#book-form");
   // insert Alert
   container.insertBefore(div, form);
   // Timeout after 3 secs
   setTimeout(function() {
-    document.querySelector('.alert').remove();
+    document.querySelector(".alert").remove();
   }, 3000);
 };
 
 // Delete Book
 UI.prototype.deleteBook = function(target) {
-  if (target.className === 'delete') {
+  if (target.className === "delete") {
     target.parentElement.parentElement.remove();
   }
 };
 
 // Clear Fields
 UI.prototype.clearFields = function() {
-  document.getElementById('title').value = '';
-  document.getElementById('author').value = '';
-  document.getElementById('isbn').value = '';
+  document.getElementById("title").value = "";
+  document.getElementById("author").value = "";
+  document.getElementById("isbn").value = "";
 };
 
 // Event Listener for Add Book
-document.getElementById('book-form').addEventListener('submit', function(e) {
+document.getElementById("book-form").addEventListener("submit", function(e) {
   // Get Form Values
-  const title = document.getElementById('title').value,
-    author = document.getElementById('author').value,
-    isbn = document.getElementById('isbn').value;
+  const title = document.getElementById("title").value,
+    author = document.getElementById("author").value,
+    isbn = document.getElementById("isbn").value;
 
   // Instantiating Book
   const book = new Book(title, author, isbn);
@@ -70,15 +70,15 @@ document.getElementById('book-form').addEventListener('submit', function(e) {
   const ui = new UI();
 
   // Validate
-  if (title === '' || author === '' || isbn === '') {
+  if (title === "" || author === "" || isbn === "") {
     //ERROR ALERT
-    ui.showAlert('Please fill in all fields', 'error');
+    ui.showAlert("Please fill in all fields", "error");
   } else {
     // Add book to list
     ui.addBookToList(book);
 
     // Show Alert
-    ui.showAlert('Book Added', 'success');
+    ui.showAlert("Book Added", "success");
 
     // Clear Fields
     ui.clearFields();
@@ -88,14 +88,14 @@ document.getElementById('book-form').addEventListener('submit', function(e) {
 });
 
 // Event listener for Delete
-document.getElementById('book-list').addEventListener('click', function(e) {
+document.getElementById("book-list").addEventListener("click", function(e) {
   // Instantiate UI
   const ui = new UI();
 
   ui.deleteBook(e.target);
 
   //  Show Message
-  ui.showAlert('Book has been removed', 'success');
+  ui.showAlert("Book has been removed", "success");
 
   e.preventDefault();
 });

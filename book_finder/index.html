@@ -10,6 +10,9 @@
     />
 
     <style>
+        #title, #author, #isbn{
+            background: #F8F8F8;
+        }
       .success,
       .error {
         color: #fff;
@@ -24,6 +27,23 @@
       .error {
         background: red;
       }
+        
+        h1 {
+            text-align: center;
+            margin:2rem;
+            color: #222;
+        }
+        #sub-button{
+            margin-top: 1rem;
+            background: #222;
+            color: #999;
+        }
+        
+        #sub-button:hover{
+            margin-top: 1rem;
+            background: red;
+            color: #fff;
+        }
     </style>
     <title>Add Book</title>
   </head>
@@ -43,7 +63,7 @@
           <label for="isbn">ISBN#</label>
           <input type="text" id="isbn" class="u-full-width" />
         </div>
-        <div><input type="submit" value="Submit" class="u-full-width" /></div>
+        <div><input type="submit" value="Submit" id="sub-button" class="u-full-width" /></div>
       </form>
       <table class="u-full-width">
         <thread>
