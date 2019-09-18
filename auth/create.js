@@ -1,13 +1,13 @@
-const loginButton = document.getElementById("login-button");
+const createUserButton = document.getElementById("create-button");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const message = document.getElementById("login-message");
 
-loginButton.onclick = function(e) {
-  //	message.textContent = emailInput.value + " has been submitted";
+createUserButton.onclick = function(e) {
+  message.textContent = emailInput.value + " congratulations";
   console.log(emailInput);
 
   firebase
     .auth()
-    .signInWithEmailAndPassword(emailInput.value, passwordInput.value);
+    .createUserWithEmailAndPassword(emailInput.value, passwordInput.value);
 };
