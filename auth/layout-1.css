@@ -97,9 +97,13 @@ BODY STYLES
 }
 #login {
   grid-column: 1/4;
-  /*	position: relative;*/
   text-align: center;
-  border: solid 1px #222;
+  background: #dae3e5;
+  padding-top: 2em;
+}
+#login a {
+  color: #64b5f5;
+  text-decoration: underline;
 }
 
 #sidebar {
@@ -114,7 +118,21 @@ BODY STYLES
   grid-column: 2/4;
   grid-row: 3/4;
   background: #dae3e5;
-  /*    border:solid #000 2px;*/
+}
+
+#create-login {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-align: center;
+  background: #dae3e5;
+}
+
+#create-login h3 {
+  padding: 1em;
+}
+
+#create-login a {
+  color: #64b5f5;
 }
 
 #social {

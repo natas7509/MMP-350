@@ -4,7 +4,7 @@ const passwordInput = document.getElementById("password");
 const message = document.getElementById("login-message");
 
 createUserButton.onclick = function(e) {
-  message.textContent = emailInput.value + " congratulations";
+  message.textContent = emailInput.value + " has been created!";
   console.log(emailInput);
 
   firebase
