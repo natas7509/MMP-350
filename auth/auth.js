@@ -21,31 +21,30 @@ const message = document.getElementById("login-message");
 //
 //});
 
-
-
-loginButton.onclick = function (e) {
-	const promise = firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value);
-	promise.catch(function (error) {
-		message.textContent = error.message;
-	});
+loginButton.onclick = function(e) {
+  const promise = firebase
+    .auth()
+    .signInWithEmailAndPassword(emailInput.value, passwordInput.value);
+  promise.catch(function(error) {
+    message.textContent = error.message + " Perhaps it's time to get rid of hotmail ?";
+  });
 };
 
 /* auth state */
 const displayName = document.getElementById("user-name");
 
-firebase.auth().onAuthStateChanged(function (user) {
-
-	if (user) {
-		document.body.classList.add('auth');
-		displayName.textContent = "Welcome, " + user.displayName;
-	} else {
-		document.body.classList.remove('auth');
-		displayName.textContent = "";
-	}
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    document.body.classList.add("auth");
+    displayName.textContent = "Welcome, " + user.displayName;
+  } else {
+    document.body.classList.remove("auth");
+    displayName.textContent = "";
+  }
 });
 
 /* log out */
 const logoutButton = document.getElementById("logout-button");
-logoutButton.onclick = function () {
-	firebase.auth().signOut();
+logoutButton.onclick = function() {
+  firebase.auth().signOut();
 };

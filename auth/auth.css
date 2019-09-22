@@ -1,12 +1,16 @@
 #user-info {
-	display: none;
+  display: none;
+  grid-column: 2/3;
+  text-align: center;
 }
+
 .auth #user-info {
-	display: block;
+  display: block;
 }
 .auth #login {
-	display: none;
+  display: none;
 }
 #login h3 {
-	padding: 1em;
+  padding: 1em;
 }
+
