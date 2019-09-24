@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Firebase Project</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+			authDomain: "mmp-three-fifty.firebaseapp.com",
+			databaseURL: "https://mmp-three-fifty.firebaseio.com",
+			projectId: "mmp-three-fifty",
+			storageBucket: "",
+			messagingSenderId: "29267025222",
+			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+
+	</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>MMP 350 Web App</h1>
+		</div>
+		<div id="menu">
+			<ul>
+
+				<li><a href="about">About</a></li>
+				<li><a href="profile">Profile</a></li>
+				<li><a href="users">Users</a></li>
+				<li><a href="support">Support</a></li>
+			</ul>
+		</div>
+		<div id="login">
+
+			<input id="email" type="text" placeholder="email">
+			<input id="password" type="password" placeholder="Password">
+			<button id="login-button" class="btn">Login</button>
+			<p id="login-message"></p>
+			<P>Not signed up yet?</P>
+			<p><a href="create.html">Create new account</a></p>
+
+		</div>
+
+		<!--		user div-->
+
+		<div id="user-info">
+			<p id="user-name"></p>
+			<button id="logout-button" class="btn">Logout</button>
+		</div>
+
+		<main id="main">
+			<h2>Main content</h2>
+			<p>This is where the main bulk of the document content would go.</p>
+			<figure class="featured-image">
+				<img src="img/img-1.jpg" alt="landscape-1" />
+				<figcaption class="image-caption">Photo by Jan Kopřiva</figcaption>
+			</figure>
+		</main>
+		<div id="sidebar">
+			<h1>Sidebar</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum debitis, nesciunt asperiores temporibus labore quas! Ab accusamus vero tenetur inventore, id repellendus saepe odit quaerat praesentium, dolorem vel aut qui animi. Quo eveniet explicabo, velit est deserunt vel cumque aut. Dolor eligendi voluptatum adipisci ut a molestias aspernatur rerum, eos amet excepturi. Et pariatur nobis vitae tenetur explicabo, aperiam vel, rerum suscipit beatae expedita quasi, repellendus voluptates iure numquam ducimus. Placeat deserunt voluptatem sint impedit nihil inventore, obcaecati, beatae commodi, aut laboriosam officiis corporis quis maiores. Porro dolore, distinctio, architecto aliquam, perspiciatis iusto sunt ut molestias eos similique laboriosam.
+			</p>
+		</div>
+		<div id="social">
+			<ul>
+				<li>twitter</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Linkedin</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="js/auth.js"></script>
+
+</body>
+
+</html>

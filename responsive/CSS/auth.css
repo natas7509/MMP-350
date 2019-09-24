@@ -1,0 +1,16 @@
+#user-info {
+  display: none;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.auth #user-info {
+  display: block;
+}
+.auth #login {
+  display: none;
+}
+#login h3 {
+  padding: 1em;
+}
+
