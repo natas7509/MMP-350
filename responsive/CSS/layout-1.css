@@ -81,11 +81,13 @@ BODY STYLES
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
+/*
 #menu {
 	grid-column: 1/4;
 	grid-row: 1/2;
 	background: #666;
-	/* display: flex; */
+	 display: flex; 
 }
 #menu ul {
 	display: flex;
@@ -93,6 +95,8 @@ BODY STYLES
 	padding: 2rem 0;
 	background: #222;
 }
+*/
+
 #header {
 	grid-column-start: 1;
 	grid-column-end: 4;
