@@ -1,3 +1,8 @@
-@import "css/layout-1.css";
-@import "css/auth.css";
-@import "css/menu.css";
+@import "CSS/layout-1.css";
+@import "CSS/auth.css";
+@import "CSS/menu.css";
+@import "CSS/create.css";
+@import "CSS/responsive.css";
+* {
+	box-sizing: border-box;
+}

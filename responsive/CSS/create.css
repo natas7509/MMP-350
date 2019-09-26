@@ -1,0 +1,24 @@
+input,
+button {
+	font-size: 1em;
+	font-family: inherit;
+	border: none;
+}
+input:focus,
+button:focus {
+	outline: none;
+}
+input {
+	border-bottom: 1px solid black;
+}
+.btn {
+	background: #222;
+	border-radius: 1em;
+}
+#login {
+	display: flex;
+	justify-content: space-evenly;
+	background: #222;
+}
+#create-new input,
+#create-new button {}
