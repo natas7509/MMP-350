@@ -20,7 +20,7 @@ UI.prototype.addBookToList = function (book) {
     <td><a href="#" class="delete">X<a></td>
   `;
 
-    list.appendChild(row);
+    list.prepend(row);
 };
 
 // Show alert
