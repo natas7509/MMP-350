@@ -42,7 +42,7 @@
 
 }
 
-/*end-400*/
+/*end-600*/
 
 @media (min-width: 601px) and (max-width: 800px) {
 
@@ -51,10 +51,10 @@
 
 
 
-    /* create account  */
+    /* creating new account */
+
     #login {
         flex-wrap: wrap;
-
     }
 
     #login input,
