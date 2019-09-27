@@ -1,10 +1,7 @@
 #container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1em;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  border: #777 solid 1px;
 }
 
 input,
@@ -24,10 +21,20 @@ input {
 }
 
 button {
-  background: lightblue;
+  background: #777;
   border-radius: 1em;
 }
 
 #create-new {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  /* background: #999; */
+  color: #fff;
+}
+
+#create-new input,
+h3 {
+  font-size: inherit;
 }
