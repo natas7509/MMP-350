@@ -3,70 +3,83 @@ Main Styles
 ------------------------------ */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
 }
+
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
+
 p {
-  margin: 10px 0;
-  padding: 1em;
+    margin: 10px 0;
+    padding: 1em;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #000;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2em;
+    color: #000;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
 }
+
 .btn {
-  font-size: 17px;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background: #333;
-  border: none;
-  padding: 13px 20px;
-  cursor: pointer;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #333;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
 }
+
 .btn:hover {
-  background: #555;
-  color: #fff;
-  cursor: pointer;
-  transform: translate(2px, 1.2px);
-  transition: 0.6s;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    transform: translate(2px, 1.2px);
+    transition: 0.6s;
 }
+
 img {
-  max-width: 100%;
-  margin-bottom: 1em;
+    max-width: 100%;
+    margin-bottom: 1em;
 }
+
 .image-caption {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 1em;
-  color: #000;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #000;
 }
+
 #main h2 {
-  padding-top: 1em;
+    padding-top: 1em;
 }
+
 #main p {
-  padding-top: 1em;
-  text-align: center;
+    padding-top: 1em;
+    text-align: center;
 }
 
 /*------------------------------------
@@ -74,53 +87,64 @@ BODY STYLES
 ------------------------------------*/
 
 #container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row: 2/3;
-  background: #666;
-  padding: 2em 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2/3;
+    background: #666;
+    padding: 2em 0;
 }
+
 #main {
-  grid-column: 2/4;
-  grid-row: 3/4;
-  background: #dae3e5;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background: #dae3e5;
 }
+
 #login {
-  grid-column: 1/4;
-  text-align: center;
-  background: #dae3e5;
-  padding-top: 2em;
+    grid-column: 1/4;
+    text-align: center;
+    background: #dae3e5;
+    padding-top: 2em;
 }
+
 #login a {
-  color: #64b5f5;
-  text-decoration: underline;
+    color: #64b5f5;
+    text-decoration: underline;
 }
+
+#login p {
+    color: #222;
+}
+
 #sidebar {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  background: #d9e5f3;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: #d9e5f3;
 }
+
 #sidebar h1 {
-  margin-top: 1em;
+    margin-top: 1em;
 }
+
 #social {
-  grid-column: 1/4;
-  border: #000 solid 2px;
-  background: #666;
+    grid-column: 1/4;
+    border: #000 solid 2px;
+    background: #666;
 }
+
 #social ul {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem 0;
-  background: #222;
-  color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    background: #222;
+    color: #fff;
 }

@@ -1,5 +1,71 @@
-@media (max-width: 400px) {
-	#container {
-		grid-template-columns: 100%;
-	}
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+
+    /* menu */
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu li {
+        font-size: 1.5em;
+        text-align: center;
+        padding: .2em;
+        margin: .5em;
+        background: #dae3e5;
+
+    }
+
+    #menu a {
+        color: #222;
+
+        width: 100%
+    }
+
+    /* create account  */
+    #login {
+        flex-wrap: wrap;
+
+    }
+
+    #login input,
+    #login button {
+        flex-basis: 100%;
+        border-radius: 1px;
+        margin: 0.5em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+
 }
+
+/*end-400*/
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+
+
+
+
+
+    /* create account  */
+    #login {
+        flex-wrap: wrap;
+
+    }
+
+    #login input,
+    #login button {
+        flex-basis: 100%;
+        border-radius: 1px;
+        margin: 0.5em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+}
+
+/*end-Tablet*/

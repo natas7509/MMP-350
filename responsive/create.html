@@ -13,45 +13,44 @@
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
     <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: 'AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4',
-        authDomain: 'mmp-three-fifty.firebaseapp.com',
-        databaseURL: 'https://mmp-three-fifty.firebaseio.com',
-        projectId: 'mmp-three-fifty',
-        storageBucket: '',
-        messagingSenderId: '29267025222',
-        appId: '1:29267025222:web:ec58ffdc137b3be2ced947'
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: 'AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4',
+            authDomain: 'mmp-three-fifty.firebaseapp.com',
+            databaseURL: 'https://mmp-three-fifty.firebaseio.com',
+            projectId: 'mmp-three-fifty',
+            storageBucket: '',
+            messagingSenderId: '29267025222',
+            appId: '1:29267025222:web:ec58ffdc137b3be2ced947'
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="container">
-      <div id="header">
-        <h1>MMP 350 Web App</h1>
-      </div>
-      <div id="menu">
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="profile">Profile</a></li>
-          <li><a href="users">Users</a></li>
-          <li><a href="support">Support</a></li>
-        </ul>
-      </div>
+        <div id="header">
+            <h1>MMP 350 Web App</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="profile">Profile</a></li>
+                <li><a href="users">Users</a></li>
+                <li><a href="support">Support</a></li>
+            </ul>
+        </div>
 
-      <div id="create-new">
-        <input id="email" type="text" placeholder="email" />
-        <input id="password" type="password" placeholder="Password" />
-        <button id="create-button" class="btn">Create</button>
-        <h3>Create new account</h3>
-        <p id="login-message"></p>
-      </div>
+        <div id="login">
+            <input id="email" type="text" placeholder="email" />
+            <input id="password" type="password" placeholder="Password" />
+            <button id="create-button" class="btn">Create</button>
+            <h3>Create new account</h3>
+            <p id="login-message"></p>
+        </div>
     </div>
 
     <script src="js/create.js"></script>
-  </body>
-</html>
+</body></html>
