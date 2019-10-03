@@ -1,84 +1,118 @@
-	@media (max-width: 450px) {
-		#container {
-			display: grid;
-			width: 100%;
-			grid-gap: 0;
-		}
-		/* menu */
-		#menu ul {
-			flex-direction: column;
-		}
-		#menu li {
-			font-size: 1.5em;
-			text-align: center;
-			padding: .2em;
-			margin: .5em;
-			background: #dae3e5;
-		}
-		#menu a {
-			color: #222;
-			width: 100%
-		}
-		#header {
-			background: green;
-		}
-		#header h1 {
-			color: #f4f4f4;
-		}
-		#main {
-			grid-column: 1/3;
-		}
-		#sidebar {
-			grid-column: 1/3;
-			grid-row: 4/5;
-		}
-		/* create account  */
-		#login {
-			flex-wrap: wrap;
-		}
-		#login .account {
-			flex: 1;
-		}
-		#login input,
-		#login button {
-			flex-basis: 100%;
-			border-radius: 1px;
-			margin: 0.5em;
-			font-size: 1.5em;
-			text-align: center;
-		}
-	}
-	/*end-415px*/
-	
-	@media (min-width: 451px) and (max-width: 768px) {
-		/* creating new account */
-		#header {
-			grid-column: 2/3;
-			grid-row: 2/3;
-		}
-		#header h1 {
-			color: #f4f4f4;
-			position: relative;
-			top: 30%;
-			margin: auto 1em;
-		}
-		#sidebar {
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-		#main {
-			grid-column: 1/4;
-		}
-		#login {
-			flex-wrap: wrap;
-		}
-		#login input,
-		#login button {
-			flex-basis: 100%;
-			border-radius: 1px;
-			margin: 0.5em;
-			font-size: 1.5em;
-			text-align: center;
-		}
-	}
-	/*end-Tablet*/
+@media (max-width: 450px) {
+  #container {
+    display: grid;
+    width: 100%;
+    padding: 0;
+  }
+
+  #menu ul {
+    flex-direction: column;
+  }
+
+  #menu li {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0.2em;
+    margin: 0.5em;
+    background: #dae3e5;
+  }
+  #menu a {
+    color: #222;
+    width: 100%;
+  }
+
+  header {
+    background: #fa0920;
+  }
+
+  header h1 {
+    color: #f4f4f4;
+  }
+
+  #main {
+    display: block;
+  }
+
+  #main .skate-img {
+    height: 300px;
+  }
+
+  /* create account  */
+  #login {
+    flex-wrap: wrap;
+  }
+  #login .account {
+    flex: 1;
+  }
+  #login input,
+  #login button {
+    flex-basis: 100%;
+    border-radius: 1px;
+    margin: 0.5em;
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 210px;
+  }
+
+  #social {
+    display: block;
+  }
+
+  #social ul {
+    flex-direction: column;
+    background: #222;
+    color: #fff;
+  }
+
+  #social li {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0.2em;
+    margin: 0.5em;
+    background: #dae3e5;
+    color: #222;
+  }
+}
+/*end-415px*/
+
+@media (min-width: 451px) and (max-width: 768px) {
+  /* creating new account */
+
+  header {
+    background: #777;
+  }
+
+  header h1 {
+    color: #f4f4f4;
+  }
+
+  #sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #sidbar p {
+    margin-bottom: 0;
+  }
+  #main {
+    display: block;
+  }
+
+  #main .skate-img {
+    background: url("/img/img-1.jpg") no-repeat center top/cover;
+    height: 400px;
+  }
+  #login {
+    flex-wrap: wrap;
+  }
+  #login input,
+  #login button {
+    flex-basis: 100%;
+    border-radius: 1px;
+    margin: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 450px;
+  }
+}
+/*end-Tablet*/
