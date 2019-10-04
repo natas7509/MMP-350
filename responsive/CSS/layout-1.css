@@ -1,5 +1,5 @@
 /* ----------------------------
-Main Styles
+Utilitys
 ------------------------------ */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");
@@ -10,8 +10,13 @@ Main Styles
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: #222;
 }
+
+.text-primary {
+  color: #fa0920;
+}
+
 ul {
   list-style: none;
 }
@@ -65,78 +70,15 @@ img {
 #main h2 {
   padding-top: 1em;
 }
-#main p {
-  padding: 2em;
-  text-align: center;
-  margin: 0;
-}
 
 /*------------------------------------
-BODY STYLES*/
-
-/*
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#header {
-    background: green;
-    grid-column: 1/2;
-}
-
-#main {
-	grid-column: 2/4;
-	grid-row: 3/4;
-	background: red;
-	color: #f4f4f4;
-}
-
-
-#sidebar {
-	grid-column: 1/2;
-	grid-row: 3/4;
-	background: #d9e5f3;
-}
-#sidebar h1 {
-	margin-top: 1em;
-}
-#login {
-	grid-column: 1/4;
-    grid-row: 4/5;
-	text-align: center;
-	background: #666;
-	padding-top: 2em;
-}
-#login a {
-	color: #64b5f5;
-	text-decoration: underline;
-}
-#login p {
-	color: #222;
-}
-#social {
-	grid-column: 1/4;
-    grid-row: 5/6;
-	border: #000 solid 2px;
-	background: #666;
-}
-#social ul {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 2rem 0;
-	background: #222;
-	color: #fff;
-}
-
-*/
+BODY STYLES
+------------------------------------*/
 
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 0.6em;
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
@@ -159,13 +101,14 @@ header {
 
 #main .skate-img {
   background: url("/img/img-1.jpg") no-repeat center top/cover;
-    height: 30vh;
+  height: 50vh;
 }
 
 .info {
   grid-column: 1/2;
   grid-row: 3/4;
   background: #a7ddec;
+  padding: 2em;
 }
 
 #login {
@@ -174,8 +117,23 @@ header {
   background: #eef8ff;
 }
 
+#login .account {
+  display: flex;
+}
+
+#login .account h6 {
+  color: #555;
+  align-self: center;
+  font-size: inherit;
+}
+
 #login .account p a {
+  color: #0000ee;
+}
+
+#login-message {
   color: #222;
+  margin: 0 2em;
 }
 
 #social {

@@ -4,6 +4,11 @@
     width: 100%;
     padding: 0;
   }
+    
+     #main p {
+    padding: 2em;
+    margin: 0;
+  }
 
   #menu ul {
     flex-direction: column;
@@ -72,11 +77,17 @@
     background: #dae3e5;
     color: #222;
   }
-}
-/*end-415px*/
+    
+    
+} /*--------end-450px------*/
+
 
 @media (min-width: 451px) and (max-width: 768px) {
-  /* creating new account */
+  
+  #main p {
+    padding: 2em;
+    margin: 0;
+  }
 
   header {
     background: #777;
@@ -86,14 +97,6 @@
     color: #f4f4f4;
   }
 
-  #sidebar {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  #sidbar p {
-    margin-bottom: 0;
-  }
   #main {
     display: block;
   }
@@ -114,5 +117,7 @@
     text-align: center;
     max-width: 450px;
   }
+    
+    
 }
-/*end-Tablet*/
+/*-------------end-Tablet*----------------/
