@@ -1,123 +1,143 @@
 @media (max-width: 450px) {
-  #container {
-    display: grid;
-    width: 100%;
-    padding: 0;
-  }
-    
-     #main p {
-    padding: 2em;
-    margin: 0;
-  }
+    #container {
+        display: grid;
+        width: 100%;
+        padding: 0;
+    }
 
-  #menu ul {
-    flex-direction: column;
-  }
+    .text-primary-1 {
+        color: #222;
+    }
 
-  #menu li {
-    font-size: 1.1em;
-    text-align: center;
-    padding: 0.2em;
-    margin: 0.5em;
-    background: #dae3e5;
-  }
-  #menu a {
-    color: #222;
-    width: 100%;
-  }
+    .text-primary-2 {
+        color: #fa0920;
+    }
 
-  header {
-    background: #fa0920;
-  }
+    #main p {
+        padding: 2em;
+        margin: 0;
+    }
 
-  header h1 {
-    color: #f4f4f4;
-  }
+    #menu ul {
+        flex-direction: column;
+    }
 
-  #main {
-    display: block;
-  }
+    #menu li {
+        font-size: 1.1em;
+        text-align: center;
+        padding: 0.2em;
+        margin: 0.5em;
+        background: #dae3e5;
+    }
 
-  #main .skate-img {
-    height: 300px;
-  }
+    #menu a {
+        color: #222;
+        width: 100%;
+    }
 
-  /* create account  */
-  #login {
-    flex-wrap: wrap;
-  }
-  #login .account {
-    flex: 1;
-  }
-  #login input,
-  #login button {
-    flex-basis: 100%;
-    border-radius: 1px;
-    margin: 0.5em;
-    font-size: 1.1em;
-    text-align: center;
-    max-width: 210px;
-  }
+    header {
+        background: #fa0920;
+    }
 
-  #social {
-    display: block;
-  }
+    header h1 {
+        color: #f4f4f4;
+    }
 
-  #social ul {
-    flex-direction: column;
-    background: #222;
-    color: #fff;
-  }
+    #main {
+        display: block;
+    }
 
-  #social li {
-    font-size: 1.1em;
-    text-align: center;
-    padding: 0.2em;
-    margin: 0.5em;
-    background: #dae3e5;
-    color: #222;
-  }
-    
-    
-} /*--------end-450px------*/
+    #main .skate-img {
+        height: 300px;
+    }
+
+    /* create account  */
+    #login {
+        flex-wrap: wrap;
+    }
+
+    #login .account {
+        flex: 1;
+    }
+
+    #login input,
+    #login button {
+        flex-basis: 100%;
+        border-radius: 1px;
+        margin: 0.5em;
+        font-size: 1.1em;
+        text-align: center;
+        max-width: 210px;
+    }
+
+    #social {
+        display: block;
+    }
+
+    #social ul {
+        flex-direction: column;
+        background: #222;
+        color: #fff;
+    }
+
+    #social li {
+        font-size: 1.1em;
+        text-align: center;
+        padding: 0.2em;
+        margin: 0.5em;
+        background: #dae3e5;
+        color: #222;
+    }
+
+
+}
+
+/*--------end-450px------*/
 
 
 @media (min-width: 451px) and (max-width: 768px) {
-  
-  #main p {
-    padding: 2em;
-    margin: 0;
-  }
 
-  header {
-    background: #777;
-  }
+    #main p {
+        padding: 2em;
+        margin: 0;
+    }
 
-  header h1 {
-    color: #f4f4f4;
-  }
+    .text-primary-2 {
+        color: #fa0920;
+    }
 
-  #main {
-    display: block;
-  }
+    header {
+        background: #777;
+    }
 
-  #main .skate-img {
-    background: url("/img/img-1.jpg") no-repeat center top/cover;
-    height: 400px;
-  }
-  #login {
-    flex-wrap: wrap;
-  }
-  #login input,
-  #login button {
-    flex-basis: 100%;
-    border-radius: 1px;
-    margin: 0.5em;
-    font-size: 1.5em;
-    text-align: center;
-    max-width: 450px;
-  }
-    
-    
+    header h1 {
+        color: #f4f4f4;
+    }
+
+    #main {
+        display: block;
+    }
+
+    #main .skate-img {
+        background: url("/responsive/img/img-1.jpg") no-repeat center top/cover;
+        height: 400px;
+    }
+
+    #login {
+        flex-wrap: wrap;
+    }
+
+    #login input,
+    #login button {
+        flex-basis: 100%;
+        border-radius: 1px;
+        margin: 0.5em;
+        font-size: 1.5em;
+        text-align: center;
+        max-width: 450px;
+    }
+
+
 }
+
 /*-------------end-Tablet*----------------/
