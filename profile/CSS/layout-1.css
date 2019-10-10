@@ -150,6 +150,12 @@ header {
     margin: 0 2em;
 }
 
+#error-message {
+    color: #222;
+    margin: 0 4em;
+    text-align: center;
+}
+
 #social {
     grid-column: 1/4;
     border: #000 solid 2px;
