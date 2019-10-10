@@ -9,6 +9,7 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -45,11 +46,11 @@
         </div>
 
         <div id="login">
+            <input id="username" placeholder="Username">
             <input id="email" type="text" placeholder="email" />
             <input id="password" type="password" placeholder="Password" />
             <button id="create-button" class="btn">Create</button>
-            <!-- <h3>Create new account</h3> -->
-            <p id="login-message"></p>
+            <p id="error-message"></p>
         </div>
     </div>
 
