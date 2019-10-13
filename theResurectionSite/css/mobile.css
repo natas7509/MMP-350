@@ -32,6 +32,7 @@
     height: 100%;
     /* Overlay */
     position: absolute;
+    /* height: -2px; */
     top: 158px;
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -72,4 +73,6 @@
   footer {
     font-size: 12px;
   }
-} /* End-500px */
+}
+
+/* End-500px */

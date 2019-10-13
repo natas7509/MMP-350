@@ -184,7 +184,7 @@ p {
 
 /* /showcase */
 #showcase {
-  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  background: #333 url("mmp350/theResurectionSite/img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
@@ -199,7 +199,7 @@ p {
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
-  top: 103px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -237,7 +237,7 @@ p {
 }
 
 #who .who-img {
-  background: url("/img/people.jpg") no-repeat center center/cover;
+  background: url("mmp350/img/people.jpg") no-repeat center center/cover;
 }
 
 /* Clients */
