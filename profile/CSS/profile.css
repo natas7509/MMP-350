@@ -1,0 +1,30 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+input,
+textarea,
+button {
+  margin: .5rem;
+  padding: .3;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+  ;
+}
+
+#profile .btn {
+  background: #F30B21;
+  color: #222;
+}
+
+#user-info {
+  border: 1px #222 solid;
+}

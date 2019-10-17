@@ -32,6 +32,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 			location.href = "profile.html?uid=" + user.uid;
 		};
 
+
 	} else {
 		document.body.classList.remove('auth');
 		displayName.textContent = "";
