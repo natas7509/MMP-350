@@ -5,6 +5,10 @@
 @import "CSS/create.css";
 @import "CSS/responsive.css";
 
+:root {
+	--text-color: #222;
+}
+
 * {
 	box-sizing: border-box;
 }

@@ -11,18 +11,20 @@ textarea,
 button {
   margin: .5rem;
   padding: .3;
-  font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
+  color: var(--text-color);
 }
 
 textarea {
   height: 100px;
-  ;
+  /* color: red; */
+  color: var(--text-color);
+
 }
 
 #profile .btn {
   background: #F30B21;
-  color: #222;
+  color: #f4f4f4;
 }
 
 #user-info {

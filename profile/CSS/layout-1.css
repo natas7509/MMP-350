@@ -12,7 +12,7 @@ Utilitys
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #222;
+  color: var(--text-color);
 }
 
 .text-primary-1 {
