@@ -19,18 +19,27 @@ button {
 
 textarea {
   height: 100px;
-  /* color: red; */
   color: var(--text-color);
 }
 
+::-webkit-input-placeholder {
+  padding: 10px;
+}
 
 #profile .btn {
   background: #F30B21;
   color: #f4f4f4;
+  width: 70%;
+}
+
+#user-info #logout-button {
+  background: #222;
+  color: #f4f4f4;
+  width: 60%;
 }
 
 #user-info {
-  border: 1px #222 solid;
+  border: 1px #757575 solid;
 }
 
 .input-icons i {
