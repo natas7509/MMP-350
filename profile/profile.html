@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Profile</title>
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="https://kit.fontawesome.com/728f700b66.js" crossorigin="anonymous"></script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
@@ -50,29 +51,30 @@
 			<h1>New York's<span class="text-primary-1"> Finest</span></h1>
 		</header>
 
-
-
-
-		<!-- <section id="main">
-			<div class="skate-img"></div>
-			<div class="info">
-				<h2 class="m-heading"><span class="text-primary-2">Your</span> Profile</h2>
-				<div class="profile-wrapper">
-					<input id="profile-name" placeholder="Username">
-					<textarea id="bio" placeholder="Add your bio"></textarea>
-					<button id="update-profile" class="btn">Update Profile</button>
-				</div>
-			</div> -->
-
 		<section id="main">
 			<div class="skate-img"></div>
 			<div class="info">
 				<h2 class="m-heading"><span class="text-primary-2">Your</span> Profile</h2>
 				<div class="profile-wrapper">
-					<input id="profile-name" placeholder="Username">
-					<input id="phone" placeholder="phone">
-					<input id="gender" placeholder="gender">
-					<input id="website" placeholder="website">
+					<div class="input-icons">
+						<i class="fa fa-user icon">
+						</i>
+						<input id="profile-name" class="input-field" placeholder="Username"></div>
+					<div class="input-icons">
+						<i class="fa fa-phone icon">
+						</i>
+						<input id="phone" class="input-field" placeholder="phone"></div>
+					<!-- <input id="phone" placeholder="phone"> -->
+					<div class="input-icons">
+						<i class="fa fa-transgender icon">
+						</i>
+						<input id="gender" class="input-field" placeholder="gender"></div>
+					<!-- <input id="gender" placeholder="gender"> -->
+					<div class="input-icons">
+						<i class="fa fa-globe icon">
+						</i>
+						<input id="website" class="input-field" placeholder="website"></div>
+					<!-- <input id="website" placeholder="website"> -->
 					<textarea id="bio" placeholder="Add your bio"></textarea>
 					<button id="update-profile" class="btn">Update Profile</button>
 				</div>
@@ -80,7 +82,6 @@
 			<!-- end info -->
 
 		</section>
-
 		<div id="login">
 
 			<input id="email" type="text" placeholder="email">
@@ -94,17 +95,11 @@
 		</div>
 		<!-- end Login -->
 
-		<!-------------------------	user div
-		----------------------------------------------------------->
-
+		<!-- User Div -->
 		<div id="user-info">
 			<p id="user-name"></p>
 			<button id="logout-button" class="btn">Logout</button>
 		</div>
-
-		<!-------------------------	 end user div
-		----------------------------------------------------------->
-
 
 		<div id="social">
 			<ul>
@@ -115,8 +110,6 @@
 			</ul>
 		</div>
 	</div>
-	<!-- end social -->
-
 
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>

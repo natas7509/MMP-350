@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 	} else {
 		document.body.classList.remove('auth');
-		displayName.textContent = "";
+		displayName.textContent = " This is not your account!";
 	}
 });
 

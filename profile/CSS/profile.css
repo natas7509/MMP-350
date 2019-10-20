@@ -13,14 +13,16 @@ button {
   padding: .3;
   font-size: inherit;
   color: var(--text-color);
+  text-align: center;
+  width: 100%;
 }
 
 textarea {
   height: 100px;
   /* color: red; */
   color: var(--text-color);
-
 }
+
 
 #profile .btn {
   background: #F30B21;
@@ -29,4 +31,26 @@ textarea {
 
 #user-info {
   border: 1px #222 solid;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-top: 1.3rem;
+  color: green;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
