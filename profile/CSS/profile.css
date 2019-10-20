@@ -39,6 +39,7 @@ textarea {
 }
 
 #user-info {
+  grid-row: 3/4;
   border: 1px #757575 solid;
 }
 
@@ -50,6 +51,11 @@ textarea {
   width: 100%;
   margin-bottom: 10px;
 }
+
+/* #website {
+  color: #0000EE;
+  cursor: pointer;
+} */
 
 .icon {
   margin-top: 1.3rem;

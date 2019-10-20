@@ -7,6 +7,8 @@ const phoneInput = document.getElementById('phone');
 const genderInput = document.getElementById('gender');
 const websiteInput = document.getElementById('website');
 
+
+
 // Profile Info
 userRef.on('value', function (snapshot) {
 	const userInfo = snapshot.val();
