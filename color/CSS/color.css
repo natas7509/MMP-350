@@ -1,0 +1,47 @@
+/*Complimentary Colors
+	main-color: #A8DEED
+	complementary1:#CFF5FF
+	complementary2: #6293A1
+	accent1:#A17852
+	accent2:#F38720
+--------------------------
+Compound Colors
+
+	main-color: #A8DEED
+	compound1:#CFF5FF
+	compound2: #6293A1
+	accent3:#A17852
+	accent4:#EDCAA8
+
+
+*/
+
+:root {
+	--main-color: #a7ddec;
+	--accent1: #A17852;
+	--accent2: #F38720;
+	--accent3: #A17852;
+	--accent4: #EDCAA8;
+	--complementary1: #CFF5FF;
+	--complementary2: #11C8FA;
+	--borders:#757575;
+	--text-color: #222;
+}
+.info {
+	background-color: var(--main-color);
+}
+#login {
+	background-color: var(--complementary1);
+}
+.btn {
+	background-color: var(--accent2);
+}
+a {
+	color: var();
+}
+#social {
+	background-color: var();
+}
+.btn {
+	background-color: var();
+}
