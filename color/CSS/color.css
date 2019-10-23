@@ -1,47 +1,65 @@
 /*Complimentary Colors
-	main-color: #A8DEED
-	complementary1:#CFF5FF
-	complementary2: #6293A1
-	accent1:#A17852
-	accent2:#F38720
+
+	main-color: #a7ddec
+	complementaryLight: #EEF8FF
+	complementaryDark: #6293A1
+	accent1: #A17852
+	accent2: #EDCAA8
+	btn:hover #FFB68F
 --------------------------
-Compound Colors
+	Compound Colors
 
-	main-color: #A8DEED
-	compound1:#CFF5FF
-	compound2: #6293A1
-	accent3:#A17852
-	accent4:#EDCAA8
-
-
+	main-color: #a7ddec
+	compoundDark:#1E3A8A
+	compoundLight: #7284BA
+	accent2:#EF9B6E
 */
 
 :root {
 	--main-color: #a7ddec;
-	--accent1: #A17852;
-	--accent2: #F38720;
-	--accent3: #A17852;
-	--accent4: #EDCAA8;
-	--complementary1: #CFF5FF;
-	--complementary2: #11C8FA;
-	--borders:#757575;
-	--text-color: #222;
+	--btnMain: #EF9B6E;
+	--btnHover: #FFB68F;
+	--textSpan: #EB5E55;
+	--bgDrk: #4E676E;
+	--bgLight: #EEF8FF;
+	--comp2: #11C8FA;
+	--borders: #757575;
+	--textDrk: #222;
+	--textLight: #f4f4f4;
 }
+
+a {
+	color: var(--textLight);
+}
+
+.text-primary-2 {
+	color: var(--textSpan);
+}
+
+.text-primary-1 {
+	color: var(--textSpan);
+}
+
+#menu ul {
+	background-color: var(--bgDrk);
+}
+
 .info {
 	background-color: var(--main-color);
 }
+
 #login {
-	background-color: var(--complementary1);
+	background-color: var(--bgLight);
 }
+
 .btn {
-	background-color: var(--accent2);
+	background-color: var(--btnMain);
 }
-a {
-	color: var();
+
+.btn:hover {
+	background-color: var(--btnHover);
 }
-#social {
-	background-color: var();
-}
-.btn {
-	background-color: var();
+
+#social ul {
+	background-color: var(--bgDrk);
 }

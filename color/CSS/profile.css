@@ -5,6 +5,7 @@
 	padding: 1rem;
 	margin-top: 1rem;
 }
+
 input,
 textarea,
 button {
@@ -14,39 +15,56 @@ button {
 	text-align: center;
 	width: 100%;
 }
+
 textarea {
 	height: 100px;
 }
+
 ::-webkit-input-placeholder {
 	padding: 10px;
 }
+
 #profile .btn {
-	background: var(--accent2);
+	background: var(--btnMain);
 	color: #f4f4f4;
 	width: 70%;
 }
+
+#profile .btn:hover {
+	background: var(--btnHover);
+}
+
 #user-info #logout-button {
-	background: var(--complementary2);
+	background: var(--btnMain);
 	color: #f4f4f4;
 	width: 60%;
 }
+
+#user-info #logout-button:hover {
+	background: var(--btnHover);
+}
+
 #user-info {
 	grid-row: 3/4;
 	border: var(--borders) 1px solid;
 }
+
 .input-icons i {
 	position: absolute;
 }
+
 .input-icons {
 	width: 100%;
 	margin-bottom: 10px;
 }
+
 .icon {
 	margin-top: 1.3rem;
 	color: green;
 	min-width: 50px;
 	text-align: center;
 }
+
 .input-field {
 	width: 100%;
 	padding: 10px;

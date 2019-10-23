@@ -5,14 +5,6 @@
     padding: 0;
   }
 
-  .text-primary-1 {
-    color: #222;
-  }
-
-  .text-primary-2 {
-    color: #fa0920;
-  }
-
   #main p {
     padding: 2em;
     margin: 0;
@@ -27,20 +19,10 @@
     text-align: center;
     padding: 0.2em;
     margin: 0.5em;
-    background: #dae3e5;
   }
 
   #menu a {
-    color: #222;
     width: 100%;
-  }
-
-  header {
-    background: #fa0920;
-  }
-
-  header h1 {
-    color: #f4f4f4;
   }
 
   #main {
@@ -88,8 +70,6 @@
 
   #social ul {
     flex-direction: column;
-    background: #222;
-    color: #fff;
   }
 
   #social li {
@@ -97,27 +77,15 @@
     text-align: center;
     padding: 0.2em;
     margin: 0.5em;
-    background: #dae3e5;
-    color: #222;
   }
-} /*--------end-450px-Phones-----*/
+}
+
+/*--------end-450px-Phones-----*/
 
 @media (min-width: 451px) and (max-width: 768px) {
   #main p {
     padding: 2em;
     margin: 0;
-  }
-
-  .text-primary-2 {
-    color: #fa0920;
-  }
-
-  header {
-    background: #777;
-  }
-
-  header h1 {
-    color: #f4f4f4;
   }
 
   #main {
@@ -137,7 +105,6 @@
   #error-message,
   #login button {
     flex-basis: 100%;
-    /*         text-align: center;*/
     border-radius: 1px;
     margin: 0.5em;
     font-size: 1.5em;
@@ -154,7 +121,9 @@
   #login .account #login-message {
     min-width: 100%;
   }
-} /*-------------end-Tablet*----------------*/
+}
+
+/*-------------end-Tablet*----------------*/
 
 /*Start ipad form input alignment when error message is activated-------------------
 -------------------------------------------------------------------------------------*/
