@@ -15,6 +15,24 @@
 	accent2:#EF9B6E
 */
 
+
+/*
+:root {
+	--main-color: #FF4D40;
+	--btnMain: #09B34F;
+	--btnHover: #40FF8F;
+	--textSpan: #B3251B;
+	--bgDrk: #4E676E;
+	--bgLight: #EEF8FF;
+	--comp2: #FF6459;
+	--borders: #757575;
+	--textDrk: #222;
+	--textLight: #f4f4f4;
+}
+*/
+
+
+/*
 :root {
 	--main-color: #a7ddec;
 	--btnMain: #EF9B6E;
@@ -27,39 +45,44 @@
 	--textDrk: #222;
 	--textLight: #f4f4f4;
 }
+*/
 
+:root {
+	--main-color: #a7ddec;
+	--btnMain: #EF9B6E;
+	--btnHover: #FFB68F;
+	--textSpan: #EB5E55;
+	--bgDrk: #4E676E;
+	--bgLight: #EEF8FF;
+	--comp2: #11C8FA;
+	--borders: #757575;
+	--textDrk: #222;
+	--textLight: #f4f4f4;
+}
 a {
 	color: var(--textLight);
 }
-
 .text-primary-2 {
 	color: var(--textSpan);
 }
-
 .text-primary-1 {
 	color: var(--textSpan);
 }
-
 #menu ul {
 	background-color: var(--bgDrk);
 }
-
 .info {
 	background-color: var(--main-color);
 }
-
 #login {
 	background-color: var(--bgLight);
 }
-
 .btn {
 	background-color: var(--btnMain);
 }
-
 .btn:hover {
 	background-color: var(--btnHover);
 }
-
 #social ul {
 	background-color: var(--bgDrk);
 }
