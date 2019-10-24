@@ -16,14 +16,14 @@
 */
 
 
-/*
+/* Red Option
 :root {
 	--main-color: #FF4D40;
 	--btnMain: #09B34F;
 	--btnHover: #40FF8F;
 	--textSpan: #B3251B;
-	--bgDrk: #4E676E;
-	--bgLight: #EEF8FF;
+	--bgDrk: #804A46;
+	--bgLight: #FF948C;
 	--comp2: #FF6459;
 	--borders: #757575;
 	--textDrk: #222;
@@ -32,14 +32,14 @@
 */
 
 
-/*
+/* Green Option
 :root {
-	--main-color: #a7ddec;
-	--btnMain: #EF9B6E;
-	--btnHover: #FFB68F;
-	--textSpan: #EB5E55;
-	--bgDrk: #4E676E;
-	--bgLight: #EEF8FF;
+	--main-color: #40FF63;
+	--btnMain: #B30927;
+	--btnHover: #FF4061;
+	--textSpan: #0AC22C;
+	--bgDrk: #468051;
+	--bgLight: #8CFFA1;
 	--comp2: #11C8FA;
 	--borders: #757575;
 	--textDrk: #222;
@@ -47,6 +47,9 @@
 }
 */
 
+
+/*
+blue option
 :root {
 	--main-color: #a7ddec;
 	--btnMain: #EF9B6E;
@@ -59,8 +62,112 @@
 	--textDrk: #222;
 	--textLight: #f4f4f4;
 }
+
+
+
+
+:root {
+	--main-color: #1786FF;
+	--complement: #FFAA17;
+	--accent-one: #3094FF;
+	--accent-two: #085AB3;
+}
+	
+
+	
+:root {
+	--main-color: #B515FF;
+	--complement: #CD61FF;
+	--accent-one: #5A0A80;
+	--accent-two: #9110CC;
+		
+	--text-color: var(--accent-two); 
+}
+	
+
+	triadic
+:root {
+	--main-hue: 140; 
+	
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+	--text-color: var(--main-color);
+		
+	--accent-one-hue: calc(var(--main-hue) - 120);
+	--accent-two-hue: calc(var(--main-hue) + 120);
+	
+	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+		
+	--complement: var(--accent-two);
+}
+	
+analogous
+:root {
+	--main-hue: 240;
+	--offset: 30;
+
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+		
+	--accent-one-hue: calc(var(--main-hue) - var(--offset));
+	--accent-two-hue: calc(var(--main-hue) + var(--offset));
+	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+	
+	--complement: var(--accent-two);
+	--button-dark: hsl(var(--accent-one-hue), 60%, 25%);
+	
+	--link-color: var(--main-color);
+}
+	
+Complemetary
+:root {
+	--main-hue: 240;
+	--complement-hue: calc(var(--main-hue) - 180);
+	
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+	--complement: hsl(var(--complement-hue), 50%, 50%);
+	--accent-one: hsl(var(--main-hue), 40%, 60%);
+	--accent-two: hsl(var(--complement-hue), 40%, 60%);
+		
+	--text-color: var(--main-color);
+	--link-color: var(--complement);
+}
+	
+ monochromatic 
+
+:root {
+	--main-hue: 240;
+	--saturation: 25;
+	--lightness: 70;
+	
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+		
+	--sat-percent: calc(var(--saturation) * 1%);
+	--accent-one: hsl(var(--main-hue), var(--sat-percent), 50%);
+		
+	--lit-percent: calc(var(--lightness) * 1%);
+	--accent-two: hsl(var(--main-hue), 50%, var(--lit-percent));
+		
+	--complement: var(--accent-one);
+	--text-color: var(--main-color);
+	--link-color: var(--accent-one);
+}
+*/
+
+:root {
+	--main-hue: 193;
+	--complement-hue: calc(var(--main-hue) - 180);
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+	--complement: hsl(var(--complement-hue), 50%, 50%);
+	--textLight: hsl(var(--main-hue), 10%, 90%);
+	--accent-one: hsl(var(--main-hue), 20%, 90%);
+	--accent-two: hsl(var(--complement-hue), 40%, 60%);
+	--bgDrk: var(--complement);
+	--bgLight: var(--accent-one);
+	/*	--textLight: var(--complement);*/
+}
 a {
-	color: var(--textLight);
+	color: var(--bgDark);
 }
 .text-primary-2 {
 	color: var(--textSpan);
@@ -69,13 +176,14 @@ a {
 	color: var(--textSpan);
 }
 #menu ul {
-	background-color: var(--bgDrk);
+	background-color: var(--bgDark);
 }
 .info {
 	background-color: var(--main-color);
 }
 #login {
 	background-color: var(--bgLight);
+	color: var(--textLight);
 }
 .btn {
 	background-color: var(--btnMain);
@@ -85,4 +193,7 @@ a {
 }
 #social ul {
 	background-color: var(--bgDrk);
+}
+#social ul li {
+	color: var(--textLight);
 }
