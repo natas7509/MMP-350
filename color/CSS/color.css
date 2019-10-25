@@ -1,93 +1,6 @@
-/*Complimentary Colors
-
-	main-color: #a7ddec
-	complementaryLight: #EEF8FF
-	complementaryDark: #6293A1
-	accent1: #A17852
-	accent2: #EDCAA8
-	btn:hover #FFB68F
---------------------------
-	Compound Colors
-
-	main-color: #a7ddec
-	compoundDark:#1E3A8A
-	compoundLight: #7284BA
-	accent2:#EF9B6E
-*/
-
-
-/* Red Option
-:root {
-	--main-color: #FF4D40;
-	--btnMain: #09B34F;
-	--btnHover: #40FF8F;
-	--textSpan: #B3251B;
-	--bgDrk: #804A46;
-	--bgLight: #FF948C;
-	--comp2: #FF6459;
-	--borders: #757575;
-	--textDrk: #222;
-	--textLight: #f4f4f4;
-}
-*/
-
-
-/* Green Option
-:root {
-	--main-color: #40FF63;
-	--btnMain: #B30927;
-	--btnHover: #FF4061;
-	--textSpan: #0AC22C;
-	--bgDrk: #468051;
-	--bgLight: #8CFFA1;
-	--comp2: #11C8FA;
-	--borders: #757575;
-	--textDrk: #222;
-	--textLight: #f4f4f4;
-}
-*/
-
-
-/* 
-blue option
-:root {
-	--main-color: #a7ddec;
-	--btnMain: #EF9B6E;
-	--btnHover: #FFB68F;
-	--textSpan: #EB5E55;
-	--bgDrk: #4E676E;
-	--bgLight: #EEF8FF;
-	--comp2: #11C8FA;
-	--borders: #757575;
-	--textDrk: #222;
-	--textLight: #f4f4f4;
-}
-
-
-
-
-:root {
-	--main-color: #1786FF;
-	--complement: #FFAA17;
-	--accent-one: #3094FF;
-	--accent-two: #085AB3;
-}
-	
-
-	
-:root {
-	--main-color: #B515FF;
-	--complement: #CD61FF;
-	--accent-one: #5A0A80;
-	--accent-two: #9110CC;
-		
-	--text-color: var(--accent-two); 
-} */
-	
-
 
 /* Complementary */
-/* :root {
+ :root {
 	--main-hue: 193;
 	--complement-hue: calc(var(--main-hue) - 180);
 
@@ -104,9 +17,9 @@ blue option
 	--bgLight: var(--accent-one);
 	--btnDrk: var(--main-text);
 	--btnLight: var(--bgLight);	
-} */
+} 
 
-/* Triadic */
+/* Triad */
 /* :root {
 	--main-hue: 110;
 	--accent-one-hue: calc(var(--main-hue) - 120);
@@ -126,7 +39,7 @@ blue option
 } */
 
 /* Mono */
-:root{
+/* :root{
 	--main-hue: 193;
 	--saturation: 20;
 	--lightness: 20;
@@ -143,8 +56,7 @@ blue option
 	--btnDrk: var(--bgDrk);	
 	--textSpan: var(--link-color);
 	--textSpan2: var(--link-color);
-
-}
+} */
 
 a {
 	color: var(--link-color);
@@ -184,3 +96,5 @@ header {
 #social ul li {
 	color: var(--link-color);
 }
+
+

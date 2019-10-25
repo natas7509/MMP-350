@@ -24,24 +24,12 @@ textarea {
 	padding: 10px;
 }
 
-#profile .btn {
-	background: var(--btnMain);
-	color: #f4f4f4;
+  #profile .btn {
 	width: 70%;
-}
-
-#profile .btn:hover {
-	background: var(--btnHover);
-}
+} 
 
 #user-info #logout-button {
-	background: var(--btnMain);
-	color: #f4f4f4;
 	width: 60%;
-}
-
-#user-info #logout-button:hover {
-	background: var(--btnHover);
 }
 
 #user-info {
