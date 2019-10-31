@@ -4,28 +4,35 @@
 		width: 100%;
 		padding: 0;
 	}
+
 	#main p {
 		padding: 2em;
 		margin: 0;
 	}
+
 	#menu ul {
 		flex-direction: column;
 	}
+
 	#menu li {
 		font-size: 1.1em;
 		text-align: center;
 		padding: 0.2em;
 		margin: 0.5em;
 	}
+
 	#menu a {
 		width: 100%;
 	}
+
 	#main {
 		display: block;
 	}
+
 	#main .skate-img {
 		height: 400px;
 	}
+
 	#main .btn {
 		display: block;
 		margin: 0 auto;
@@ -35,22 +42,42 @@
 		padding: 13px 20px;
 		cursor: pointer;
 	}
+
+	/*---------------- Posts & Publish Resize------------------------------------------ */
+	#posts {
+		margin: 0;
+	}
+
+	/* Compose Post Resize */
+	#write-post {
+		margin-bottom: .6em;
+	}
+
+	#post-text {
+		color: var(--main-text);
+		height: 10vh;
+
+	}
+
 	/* --------------Login and error message when activated - Phones  
     ------------------------------------------------------------------*/
 	#login {
 		flex-wrap: wrap;
 	}
+
 	#login .account {
 		display: block;
 		min-width: 100%;
 		text-align: center;
 	}
+
 	#login .account p#login-message {
 		flex-basis: 100%;
 		font-size: 0.9em;
 		text-align: center;
 		max-width: 100%;
 	}
+
 	#login input,
 	#error-message,
 	#login button {
@@ -61,12 +88,15 @@
 		text-align: center;
 		max-width: 210px;
 	}
+
 	#social {
 		display: block;
 	}
+
 	#social ul {
 		flex-direction: column;
 	}
+
 	#social li {
 		font-size: 1.1em;
 		text-align: center;
@@ -82,16 +112,20 @@
 		padding: 2em;
 		margin: 0;
 	}
+
 	#main {
 		display: block;
 	}
+
 	#main .skate-img {
 		background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
 		height: 400px;
 	}
+
 	#login {
 		flex-wrap: wrap;
 	}
+
 	#login input,
 	#error-message,
 	#login button {
@@ -102,11 +136,13 @@
 		text-align: center;
 		max-width: 400px;
 	}
+
 	#login .account {
 		display: block;
 		min-width: 400px;
 		text-align: center;
 	}
+
 	#login .account #login-message {
 		min-width: 100%;
 	}

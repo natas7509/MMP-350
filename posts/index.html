@@ -29,7 +29,6 @@
 		};
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
-
 	</script>
 
 </head>
@@ -47,7 +46,7 @@
 		</div>
 
 		<header>
-			<h1>New York's<span class="text-primary-1"> Finest</span></h1>
+			<h1>Recent<span class="text-primary-1"> Posts</span></h1>
 		</header>
 
 		<!--	Publishing Area-->
@@ -56,11 +55,9 @@
 				<textarea id="post-text" placeholder="Compose a new post"></textarea>
 				<button id="publish" class="btn">Publish</button>
 			</div>
+			<!-- Posts Div -->
+			<div id="posts" class="posts-layout"></div>
 		</div>
-
-		<!--new lecture-->
-		<div id="posts"></div>
-
 
 
 		<div id="login">
