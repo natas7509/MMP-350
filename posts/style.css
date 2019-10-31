@@ -9,15 +9,19 @@
 @import "CSS/auth.css";
 @import "CSS/menu.css";
 @import "CSS/create.css";
+@import "CSS/publish.css";
+@import "CSS/posts.css";
 
 /*Responsive Syles*/
 
 @import "CSS/responsive.css";
+
 /*
 :root {
 	--text-color: #222;
 }
 */
+
 * {
 	box-sizing: border-box;
 }

@@ -40,15 +40,6 @@ h6 {
 	padding: 13px 20px;
 	cursor: pointer;
 }
-#main .btn {
-	display: block;
-	margin: 0 auto;
-	max-width: 400px;
-	font-size: 15px;
-	border: none;
-	padding: 13px 20px;
-	cursor: pointer;
-}
 .btn:hover {
 	background: var(--accent2);
 	color: #fff;

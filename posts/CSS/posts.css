@@ -1,0 +1,27 @@
+#posts {
+	width: 300px;
+	text-align: center;
+}
+.post {
+	background-color: var(--link-color);
+}
+.post .text {
+	height: 3em;
+	background-color: var(--link-color);
+	color: var(--main-text);
+	padding: .5em;
+	text-align: left;
+}
+.post .author {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: var(--bg-drk);
+	border: solid 2px #ccc;
+	margin-bottom: .5em;
+	padding: .5em;
+}
+.post .date {
+	background-color: var(--bgDrk);
+	color: var(--link-color);
+	padding: .5em;
+}
