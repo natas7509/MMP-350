@@ -1,4 +1,21 @@
+
+
+#write-post {
+	border: solid 1px #000;
+	grid-column: 1/3;
+	/* grid-row: 3/4; */
+	padding: 1em;
+}
+
 #post-text {
 	color: var(--main-text);
+	grid-column: 1/4;
 	height: 30vh;
+	
 }
+
+/* .info {
+	grid-column: 1/2;
+	grid-row: 3/4;
+	padding: 2em;
+} */

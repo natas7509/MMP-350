@@ -75,7 +75,6 @@ BODY STYLES
 }
 header {
 	grid-column: 1/4;
-	/*	background: #eef8ff;*/
 	padding: 1em;
 }
 #main {
