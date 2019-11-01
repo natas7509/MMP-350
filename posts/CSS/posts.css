@@ -37,7 +37,11 @@
 
 }
 
+/* For iPhone */
 @media (max-width: 450px) {
+#write-post {
+	margin: 0 1em 1em 0;
+}
 
 	#posts {
 		display: grid;
@@ -49,17 +53,33 @@
 	#post-text {
 		color: var(--main-text);
 		height: 100px;
+		margin-bottom: 1em;
+		padding: .5em;
 	}
 
 	.compose-img {
-		display: none;
+		display: block;
+		width: 100%;
+		
+		margin: 0;
 	}
-
-	/* #user-info {
-		background: orchid;
-		grid-column: 1/3;
-		grid-row: 2/3;
-	} */
-
+	
 
 }
+
+/* For iPad */
+@media (min-width: 451px) and (max-width: 768px)  {
+
+	#posts {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row: 4/5;
+
+	}
+
+	#post-text {
+		color: var(--main-text);
+		height: 100px;
+	}
+
+} 
