@@ -3,25 +3,31 @@ Utilitys
 ------------------------------ */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--text-color);
 }
+
 ul {
 	list-style: none;
 }
+
 a {
 	text-decoration: none;
 }
+
 p {
 	margin: 10px 0;
 	padding: 1em;
 }
+
 h1,
 h2,
 h3,
@@ -32,6 +38,7 @@ h6 {
 	font-family: "Raleway", sans-serif;
 	font-size: 2em;
 }
+
 .btn {
 	font-size: 15px;
 	justify-content: center;
@@ -40,6 +47,7 @@ h6 {
 	padding: 13px 20px;
 	cursor: pointer;
 }
+
 .btn:hover {
 	background: var(--accent2);
 	color: #fff;
@@ -47,16 +55,19 @@ h6 {
 	transform: translate(2px, 1.2px);
 	transition: 0.6s;
 }
+
 img {
 	max-width: 100%;
 	margin-bottom: 1em;
 }
+
 .image-caption {
 	font-size: 2em;
 	text-align: center;
 	margin-bottom: 1em;
 	color: #f4f4f4;
 }
+
 #main h2 {
 	padding-top: 1em;
 }
@@ -73,55 +84,68 @@ BODY STYLES
 	margin: auto;
 	padding: 0 2rem;
 }
+
 header {
 	grid-column: 1/4;
 	padding: 1em;
 }
+
 #main {
 	display: flex;
 }
+
 #main div {
 	flex: 1;
 }
+
 #main .skate-img {
 	background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
 	height: 50vh;
 }
+
 .info {
 	grid-column: 1/2;
 	grid-row: 3/4;
 	padding: 2em;
 }
+
 #login {
 	grid-column: 1/4;
-	grid-row: 4/5;
+	grid-row: 5/6;
 	background: #eef8ff;
 }
+
 #login .account {
 	display: block;
 }
+
 #login-message {
 	color: var(--textDrk);
 	padding: 1rem;
 	max-width: 180px;
 }
+
 #login .account h6 {
 	color: #555;
 	align-self: center;
 	font-size: inherit;
 }
+
 #login .account p a {
 	color: #0000ee;
 }
+
 #error-message {
 	color: #222;
 	margin: 4em 0;
 	text-align: center;
 }
+
 #social {
 	grid-column: 1/4;
 	background: #666;
 }
+
 #social ul {
 	display: flex;
 	justify-content: space-evenly;

@@ -1,21 +1,30 @@
-
-
 #write-post {
-	border: solid 1px #000;
-	grid-column: 1/3;
-	/* grid-row: 3/4; */
-	padding: 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
 }
 
 #post-text {
 	color: var(--main-text);
 	grid-column: 1/4;
-	height: 30vh;
-	
+	height: 100%;
 }
 
-/* .info {
+.compose-img {
+	grid-column: 4/7;
+	height: 330px;
+	margin-top: .5em;
+}
+
+#write-post .btn {
 	grid-column: 1/2;
-	grid-row: 3/4;
-	padding: 2em;
-} */
+	/* grid-row: 4/5; */
+	width: 500px;
+}
+
+@media (max-width: 450px) {
+	#write-post .btn {
+		grid-column: 1/4;
+		width: 500px;
+	}
+}
