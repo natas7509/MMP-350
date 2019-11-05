@@ -5,14 +5,11 @@
 	grid-gap: 0.6em;
 	text-align: center;
 }
-
-
 .post {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--link-color);
 }
-
 .post .text {
 	background-color: var(--link-color);
 	color: var(--main-text);
@@ -20,7 +17,6 @@
 	text-align: left;
 	margin-bottom: .5em;
 }
-
 .post .author {
 	font-size: 1.4em;
 	text-transform: uppercase;
@@ -29,57 +25,46 @@
 	margin-bottom: .5em;
 	padding: .5em;
 }
-
 .post .date {
 	background-color: var(--bgDrk);
 	color: var(--link-color);
 	padding: .5em;
-
 }
 
 /* For iPhone */
-@media (max-width: 450px) {
-#write-post {
-	margin: 0 1em 1em 0;
-}
 
+@media (max-width: 450px) {
+	#write-post {
+		margin: 0 0 1em 0;
+	}
 	#posts {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-row: 4/5;
-
 	}
-
 	#post-text {
 		color: var(--main-text);
 		height: 100px;
 		margin-bottom: 1em;
 		padding: .5em;
 	}
-
 	.compose-img {
 		display: block;
 		width: 100%;
-		
 		margin: 0;
 	}
-	
-
 }
 
 /* For iPad */
-@media (min-width: 451px) and (max-width: 768px)  {
 
+@media (min-width: 451px) and (max-width: 768px) {
 	#posts {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-row: 4/5;
-
 	}
-
 	#post-text {
 		color: var(--main-text);
 		height: 100px;
 	}
-
-} 
+}
