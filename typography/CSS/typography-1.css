@@ -1,0 +1,64 @@
+/*======================== TYPOG
+
+font-family: 'Lato',
+sans-serif;
+font-family: 'ZCOOL XiaoWei',
+serif;
+
+ ===================================*/
+
+:root {
+	--display-font: 'ZCOOL XiaoWei', serif;
+	--text-font: 'Lato', cursive;
+	--link-font: var(--display-font);
+}
+body {
+	font-family: var(--display-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+	font-family: var(--display-font);
+	font-size: 2em;
+}
+a {
+	font-family: var(--link-font);
+}
+.post {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--link-color)
+}
+.post .text {
+	font-family: var(--text-font);
+	background-color: var(--link-color);
+	color: var(--main-text);
+	padding: .5em;
+	text-align: left;
+	margin-bottom: .5em;
+}
+.post .author {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: var(--bg-drk);
+	border: solid 2px #ccc;
+	margin-bottom: .5em;
+	padding: .5em;
+}
+.post .date {
+	font-family: var(--text-font);
+	background-color: var(--bgDrk);
+	color: var(--link-color);
+	padding: .5em;
+}
+
+/*
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
+*/

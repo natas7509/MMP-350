@@ -1,0 +1,11 @@
+
+#write-post {
+	display: flex;
+	flex-direction: column;
+}
+
+.compose-img {
+	height: 30vh;
+	margin: .5em 0 0 1em;
+} 
+

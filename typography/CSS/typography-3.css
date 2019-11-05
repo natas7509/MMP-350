@@ -1,0 +1,55 @@
+/*======================== TYPOG-3
+
+font-family: 'Playfair Display', serif;
+font-family: 'Poiret One', cursive;
+
+ ===================================*/
+
+:root {
+	--display-font: 'Poiret One', cursive;
+	--text-font: 'Playfair Display', serif;
+	--link-font: var(--text-font);
+}
+body {
+	font-family: var(--display-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+	font-family: var(--display-font);
+	font-size: 2em;
+}
+.post {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--link-color)
+}
+.post .author {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: var(--bg-drk);
+	border: solid 2px #ccc;
+	margin-bottom: .5em;
+	padding: .5em;
+}
+a {
+	font-family: var(--link-font);
+}
+.post .date {
+	font-family: var(--text-font);
+	background-color: var(--bgDrk);
+	color: var(--link-color);
+	padding: .5em;
+}
+.post .text {
+	font-family: var(--text-font);
+	background-color: var(--link-color);
+	color: var(--main-text);
+	padding: .5em;
+	text-align: left;
+	margin-bottom: .5em;
+}

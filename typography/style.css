@@ -1,0 +1,29 @@
+/*===========TYPOGRAPHY==========*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One&display=swap');
+@import "CSS/typography-1.css";
+@import "CSS/typography-2.css";
+@import "CSS/typography-3.css";
+
+/*Globals*/
+
+@import "CSS/layout-1.css";
+@import "CSS/color.css";
+
+/*Pages*/
+
+@import "CSS/profile.css";
+@import "CSS/auth.css";
+@import "CSS/menu.css";
+@import "CSS/create.css";
+@import "CSS/publish.css";
+@import "CSS/posts.css";
+
+/*Responsive Syles*/
+
+@import "CSS/responsive.css";
+* {
+	box-sizing: border-box;
+}
