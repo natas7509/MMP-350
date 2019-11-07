@@ -14,6 +14,7 @@ serif;
 }
 body {
 	font-family: var(--display-font);
+	/*	font-size: 3vw;*/
 }
 h1,
 h2,
@@ -22,8 +23,6 @@ h4,
 h5,
 h6 {
 	text-align: center;
-	font-family: var(--display-font);
-	font-size: 2em;
 }
 a {
 	font-family: var(--link-font);
@@ -42,7 +41,6 @@ a {
 	margin-bottom: .5em;
 }
 .post .author {
-	font-size: 1.4em;
 	text-transform: uppercase;
 	color: var(--bg-drk);
 	border: solid 2px #ccc;
