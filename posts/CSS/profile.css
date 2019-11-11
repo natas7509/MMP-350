@@ -17,16 +17,16 @@ button {
 }
 
 textarea {
-	height: 100px;
+	height: 100%;
 }
 
 ::-webkit-input-placeholder {
 	padding: 10px;
 }
 
-  #profile .btn {
+#profile .btn {
 	width: 70%;
-} 
+}
 
 #user-info #logout-button {
 	width: 60%;

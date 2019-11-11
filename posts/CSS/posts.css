@@ -5,11 +5,13 @@
 	grid-gap: 0.6em;
 	text-align: center;
 }
+
 .post {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--link-color);
 }
+
 .post .text {
 	background-color: var(--link-color);
 	color: var(--main-text);
@@ -17,6 +19,7 @@
 	text-align: left;
 	margin-bottom: .5em;
 }
+
 .post .author {
 	font-size: 1.4em;
 	text-transform: uppercase;
@@ -25,6 +28,7 @@
 	margin-bottom: .5em;
 	padding: .5em;
 }
+
 .post .date {
 	background-color: var(--bgDrk);
 	color: var(--link-color);
@@ -37,17 +41,20 @@
 	#write-post {
 		margin: 0 0 1em 0;
 	}
+
 	#posts {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-row: 4/5;
 	}
+
 	#post-text {
 		color: var(--main-text);
 		height: 100px;
 		margin-bottom: 1em;
 		padding: .5em;
 	}
+
 	.compose-img {
 		display: block;
 		width: 100%;
@@ -63,6 +70,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-row: 4/5;
 	}
+
 	#post-text {
 		color: var(--main-text);
 		height: 100px;

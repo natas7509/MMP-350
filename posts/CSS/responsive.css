@@ -35,6 +35,10 @@
 		height: 400px;
 	}
 
+	#main .compose-img {
+		height: 400px;
+	}
+
 	#main .btn {
 		display: block;
 		margin: 0 auto;
