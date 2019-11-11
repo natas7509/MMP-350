@@ -12,10 +12,19 @@ serif;
 	--text-font: 'Lato', cursive;
 	--link-font: var(--display-font);
 }
+
 body {
 	font-family: var(--display-font);
-	/*	font-size: 3vw;*/
+	font-size: 2vw;
 }
+
+#menu ul a,
+#social ul li {
+	font-family: var(--link-font);
+	font-size: 2vmin;
+	text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
@@ -24,39 +33,47 @@ h5,
 h6 {
 	text-align: center;
 }
-a {
-	font-family: var(--link-font);
-}
+
 .post {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--link-color)
 }
+
 .post .text {
+	font-size: 2vmin;
 	font-family: var(--text-font);
 	background-color: var(--link-color);
 	color: var(--main-text);
 	padding: .5em;
 	text-align: left;
 	margin-bottom: .5em;
+
 }
+
+header {
+	font-size: 1.4vmax;
+}
+
 .post .author {
+	font-size: 2.3vmin;
 	text-transform: uppercase;
 	color: var(--bg-drk);
 	border: solid 2px #ccc;
 	margin-bottom: .5em;
 	padding: .5em;
 }
+
 .post .date {
+	font-size: 2vmin;
 	font-family: var(--text-font);
 	background-color: var(--bgDrk);
 	color: var(--link-color);
 	padding: .5em;
 }
 
-/*
-.post .date::before {
-	content: " on ";
-	color: var(--main-color);
+#write-post,
+#login {
+	font-size: 2vmin;
+	font-family: var(--text-font);
 }
-*/
