@@ -15,24 +15,14 @@ serif;
 
 body {
 	font-family: var(--display-font);
-	font-size: 2vw;
 }
 
 #menu ul a,
 #social ul li {
 	font-family: var(--link-font);
-	font-size: 2vmin;
 	text-transform: uppercase;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: center;
-}
 
 .post {
 	display: flex;
@@ -41,7 +31,6 @@ h6 {
 }
 
 .post .text {
-	font-size: 2vmin;
 	font-family: var(--text-font);
 	background-color: var(--link-color);
 	color: var(--main-text);
@@ -52,11 +41,11 @@ h6 {
 }
 
 header {
-	font-size: 1.4vmax;
+	font-size: 3vmin;
 }
 
 .post .author {
-	font-size: 2.3vmin;
+	font-size: 3vmin;
 	text-transform: uppercase;
 	color: var(--bg-drk);
 	border: solid 2px #ccc;
@@ -65,7 +54,7 @@ header {
 }
 
 .post .date {
-	font-size: 2vmin;
+	font-size: 3vmin;
 	font-family: var(--text-font);
 	background-color: var(--bgDrk);
 	color: var(--link-color);
@@ -74,6 +63,5 @@ header {
 
 #write-post,
 #login {
-	font-size: 2vmin;
 	font-family: var(--text-font);
 }

@@ -18,18 +18,9 @@ body {
 #menu ul a,
 #social ul li {
 	font-family: var(--link-font);
-	font-size: 2.5vmin;
 	text-transform: uppercase;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: center;
-}
 
 .post {
 	display: flex;
@@ -38,7 +29,6 @@ h6 {
 }
 
 .post .text {
-	font-size: 2.3vmin;
 	font-family: var(--text-font);
 	background-color: var(--link-color);
 	color: var(--main-text);
@@ -53,7 +43,7 @@ header {
 }
 
 .post .author {
-	font-size: 2.8vmin;
+	font-size: 3vmin;
 	text-transform: uppercase;
 	color: var(--bg-drk);
 	border: solid 2px #ccc;
@@ -62,7 +52,7 @@ header {
 }
 
 .post .date {
-	font-size: 2.7vmin;
+	font-size: 3vmin;
 	font-family: var(--text-font);
 	background-color: var(--bgDrk);
 	color: var(--link-color);
@@ -71,6 +61,5 @@ header {
 
 #write-post,
 #login {
-	font-size: 2.7vmin;
 	font-family: var(--text-font);
 }
