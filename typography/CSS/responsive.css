@@ -33,6 +33,10 @@
 		height: 400px;
 	}
 
+	#main .compose-img {
+		height: 400px;
+	}
+
 	#main .btn {
 		display: block;
 		margin: 0 auto;
@@ -97,10 +101,6 @@
 		margin: 0.5em;
 	}
 
-	#main .compose-img {
-		height: auto;
-		margin: auto;
-	}
 }
 
 /*  ============== End Phones =====================*/
@@ -164,10 +164,6 @@
 		margin: 0px;
 	}
 
-	#main .compose-img {
-		height: auto;
-		margin: auto;
-	}
 }
 
 /*  ============== End iPad =====================*/
@@ -185,7 +181,4 @@
 		max-width: 160px;
 	}
 
-	#main .compose-img {
-		display: none;
-	}
 }
