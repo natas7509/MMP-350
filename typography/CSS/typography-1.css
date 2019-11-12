@@ -45,21 +45,23 @@ header {
 }
 
 .post .author {
-	font-size: 3vmin;
+	font-size: 1.5vmax;
 	text-transform: uppercase;
+	letter-spacing: .5px;
 	color: var(--bg-drk);
-	border: solid 2px #ccc;
 	margin-bottom: .5em;
 	padding: .5em;
 }
 
 .post .date {
-	font-size: 3vmin;
+	font-size: 2.3vmin;
 	font-family: var(--text-font);
 	background-color: var(--bgDrk);
 	color: var(--link-color);
 	padding: .5em;
 }
+
+
 
 #write-post,
 #login {
