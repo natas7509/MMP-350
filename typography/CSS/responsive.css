@@ -124,6 +124,11 @@
 		height: 400px;
 	}
 
+	#main .compose-img {
+		height: 400px;
+		margin: 0;
+	}
+
 	#login {
 		flex-wrap: wrap;
 	}
