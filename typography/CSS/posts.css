@@ -8,6 +8,7 @@
 
 #posts .post .text {
 	padding: .5em 1em;
+	line-height: 1.5;
 }
 
 #post-text {

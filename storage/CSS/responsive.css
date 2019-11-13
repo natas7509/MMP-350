@@ -35,6 +35,7 @@
 
 	#main .compose-img {
 		height: 400px;
+		margin: 0;
 	}
 
 	#main .btn {
@@ -121,6 +122,11 @@
 	#main .skate-img {
 		background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
 		height: 400px;
+	}
+
+	#main .compose-img {
+		height: 400px;
+		margin: 0;
 	}
 
 	#login {

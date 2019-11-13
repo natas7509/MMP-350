@@ -51,6 +51,7 @@ header {
 	color: var(--bg-drk);
 	margin-bottom: .5em;
 	padding: .5em;
+	border: none;
 }
 
 .post .date {
