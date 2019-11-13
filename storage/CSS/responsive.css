@@ -48,12 +48,26 @@
 		cursor: pointer;
 	}
 
+	#write-post {
+		margin: 0 0 1em 0;
+	}
+
+	#posts {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row: 4/5;
+	}
+
 	#posts .post .text {
 		padding: .9em 1em;
 	}
 
+
 	#post-text {
+		color: var(--main-text);
+		height: 100px;
 		margin: 0px;
+		padding: .5em;
 	}
 
 	/*---------------- Posts & Publish Resize------------------------------------------ */
