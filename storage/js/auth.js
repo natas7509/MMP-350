@@ -25,6 +25,12 @@ firebase.auth().onAuthStateChanged(function (user) {
 		userRef.on('value', function (snapshot) {
 			const userInfo = snapshot.val();
 			displayName.textContent = "Welcome, " + userInfo.displayName;
+
+			// =============== MY WORK ================
+			// check for image and then add 
+			if (userInfo.imageURL) {
+				document.getElementById('edit-profile-image').src = userInfo.imageURL;
+			}
 		});
 
 		const profileButton = document.getElementById("edit-profile");
