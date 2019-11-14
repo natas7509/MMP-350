@@ -30,6 +30,8 @@ function createPost(data) {
 		userImage.src = users[data.uid].imageURL;
 		userImage.classList.add('user-image');
 		post.appendChild(userImage);
+	} else {
+		userImage.src = 'images/ball.jpeg';
 	}
 
 	post.appendChild(text);
