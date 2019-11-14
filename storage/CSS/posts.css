@@ -8,6 +8,15 @@
 
 #posts .post .text {
 	padding: .5em 1em;
+	line-height: 1.5;
+}
+
+#posts .post .user-image {
+	border: solid 2px #ccc;
+	width: 30%;
+	justify-content: center;
+	align-self: center;
+	margin-top: 1em;
 }
 
 #post-text {
@@ -15,10 +24,15 @@
 	height: 350px
 }
 
+#write-post #edit-profile-image {
+	width: 40%;
+	margin: 0 auto .5em auto;
+}
+
 /* For iPhone */
 
 @media (max-width: 450px) {
-	#write-post {
+	/* #write-post {
 		margin: 0 0 1em 0;
 	}
 
@@ -33,5 +47,5 @@
 		height: 100px;
 		margin: 1em;
 		padding: .5em;
-	}
+	} */
 }

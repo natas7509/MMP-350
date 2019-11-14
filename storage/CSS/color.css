@@ -1,7 +1,6 @@
-
 /* Complementary */
- :root {
-	--main-hue: 193;
+:root {
+	--main-hue: 20;
 	--complement-hue: calc(var(--main-hue) - 180);
 
 	--main-color: hsl(var(--main-hue), 50%, 50%);
@@ -16,8 +15,8 @@
 	--bgDrk: var(--complement);
 	--bgLight: var(--accent-one);
 	--btnDrk: var(--main-text);
-	--btnLight: var(--bgLight);	
-} 
+	--btnLight: var(--bgLight);
+}
 
 /* Triad */
 /* :root {
@@ -39,7 +38,7 @@
 } */
 
 /* Mono */
-/* :root{
+/* :root {
 	--main-hue: 193;
 	--saturation: 20;
 	--lightness: 20;
@@ -53,7 +52,7 @@
 	--accent-two: hsl(var(--main-hue), 50%, var(--light-percent));
 	--bgLight: var(--accent-one);
 	--bgDrk: var(--accent-two);
-	--btnDrk: var(--bgDrk);	
+	--btnDrk: var(--bgDrk);
 	--textSpan: var(--link-color);
 	--textSpan2: var(--link-color);
 } */
@@ -61,12 +60,15 @@
 a {
 	color: var(--link-color);
 }
+
 .text-primary-2 {
 	color: var(--textSpan);
 }
+
 .text-primary-1 {
 	color: var(--textSpan2);
 }
+
 #menu {
 	background-color: var(--bgDrk);
 }
@@ -74,27 +76,31 @@ a {
 header {
 	background-color: var(--bgLight);
 }
+
 .info {
 	background-color: var(--main-color);
 	color: var(--textLight);
 	/* color: #fff; */
 }
+
 #login {
 	background-color: var(--bgLight);
-	
+
 }
+
 .btn {
 	background-color: var(--btnDrk);
 	color: var(--btnLight);
 }
+
 .btn:hover {
 	background-color: var(--btnHover);
 }
+
 #social ul {
 	background-color: var(--bgDrk);
 }
+
 #social ul li {
 	color: var(--link-color);
 }
-
-

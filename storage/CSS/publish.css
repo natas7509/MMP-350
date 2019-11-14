@@ -3,8 +3,7 @@
 	flex-direction: column;
 }
 
-
 #main .compose-img {
 	background: url("/MMP-350/typography/blogger.jpg") no-repeat top center/cover;
-	height: 50vh;
+	margin-right: .7em;
 }
