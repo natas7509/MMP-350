@@ -101,6 +101,20 @@ header {
 	height: 50vh;
 }
 
+/* =========== ATTACH BOX =========================================== */
+#attach {
+	display: flex;
+}
+
+#attach div {
+	flex: 1;
+}
+
+#attach .skate-img {
+	background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
+	height: 50vh;
+}
+
 .info {
 	grid-column: 1/2;
 	grid-row: 3/4;
