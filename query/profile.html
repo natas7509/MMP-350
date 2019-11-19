@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="https://kit.fontawesome.com/728f700b66.js" crossorigin="anonymous"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+
+
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+			authDomain: "mmp-three-fifty.firebaseapp.com",
+			databaseURL: "https://mmp-three-fifty.firebaseio.com",
+			projectId: "mmp-three-fifty",
+			storageBucket: "mmp-three-fifty.appspot.com",
+			messagingSenderId: "29267025222",
+			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="/storage/profile.html">Profile</a></li>
+				<li><a href="users.html">Users</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+		</div>
+
+		<header>
+			<h1>New York's<span class="text-primary-1"> Finest</span></h1>
+		</header>
+
+		<!--======  PROFILE SECTION  ================-->
+		<section id="main">
+			<div class="skate-img"></div>
+			<div class="info">
+				<h2 class="m-heading"><span class="text-primary-2">Your</span> Profile</h2>
+				<div class="profile-wrapper">
+					<img id="profile-image">
+					<div class="input-icons">
+						<i class="fa fa-user icon"></i>
+
+						<input id="profile-name" class="input-field" placeholder="Username">
+
+					</div>
+					<div class="input-icons">
+						<i class="fa fa-phone icon">
+						</i>
+						<input id="phone" class="input-field" placeholder="phone">
+					</div>
+					<div class="input-icons">
+						<i class="fa fa-transgender icon">
+						</i>
+						<input id="gender" class="input-field" placeholder="gender">
+					</div>
+					<div class="input-icons">
+						<i class="fa fa-globe icon">
+						</i>
+						<input type="url" id="website" class="input-field" placeholder="website">
+					</div>
+
+					<textarea id="bio" placeholder="Add your bio"></textarea>
+					<div id="add-image">
+						<p>Upload your user profile image:</p>
+						<input id="image-file" type="file" accept="image/png, image/gif, image/jpeg">
+						<button id="submit-image" class="btn">Upload Image</button>
+					</div>
+
+				</div>
+				<button id="update-profile" class="btn">Update Profile</button>
+			</div>
+
+			<!-- end info -->
+
+		</section>
+		<div id="login">
+
+			<input id="email" type="text" placeholder="email">
+			<input id="password" type="password" placeholder="Password">
+			<button id="login-button" class="btn">Login</button>
+			<div class="account">
+				<p id="login-message"></p>
+				<h6>Not a Member yet?</h6>
+				<p><a href="create.html">Create new account</a></p>
+			</div>
+		</div>
+		<!-- end Login -->
+
+		<!-- User Div -->
+		<div id="user-info">
+			<p id="user-name"></p>
+			<button id="logout-button" class="btn">Logout</button>
+		</div>
+
+		<div id="social">
+			<ul>
+				<li>twitter</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Linkedin</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/auth.js"></script>
+	<script src="js/profile.js"></script>
+
+</body>
+
+</html>
