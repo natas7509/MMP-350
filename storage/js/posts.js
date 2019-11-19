@@ -25,23 +25,22 @@ function createPost(data) {
 
 	//	posts.appendChild(post);
 	posts.insertBefore(post, posts.firstElementChild);
-	if (users[data.uid].imageURL) {
-		const userImage = new Image();
-		userImage.src = users[data.uid].imageURL;
-		userImage.classList.add('user-image');
-		post.appendChild(userImage);
-	} else {
-		userImage.src = 'images/ball.jpeg';
-	}
 
+	/* adding user profile image */
+	const img = new Image();
+	if (users[data.uid].imageURL) {
+		img.src = users[data.uid].imageURL;
+	} else {
+		img.src = 'images/logo.png';
+	}
+	img.classList.add('profile-image');
+
+	post.appendChild(img);
 	post.appendChild(text);
 	post.appendChild(author);
 	post.appendChild(date);
+
 }
-
-
-
-
 
 /* get users */
 let userCount = 0;
