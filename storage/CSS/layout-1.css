@@ -102,18 +102,13 @@ header {
 }
 
 /* =========== ATTACH BOX =========================================== */
-#attach {
-	display: flex;
-}
 
-#attach div {
-	flex: 1;
-}
-
-#attach .skate-img {
-	background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
-	height: 50vh;
-}
+/* #attach {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row: 4/5;
+	border: red solid 1px;
+} */
 
 .info {
 	grid-column: 1/2;
@@ -123,7 +118,7 @@ header {
 
 #login {
 	grid-column: 1/4;
-	grid-row: 5/6;
+	grid-row: 4/5;
 	background: #eef8ff;
 }
 
