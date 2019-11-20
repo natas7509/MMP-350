@@ -116,6 +116,18 @@
 		margin: 0.5em;
 	}
 
+	/* #login {
+		grid-row: 3;
+	} */
+
+	/* .auth #main {
+		grid-row: 3;
+	}
+
+	#user-info {
+		grid-row: 3/4;
+	} */
+
 }
 
 /*  ============== End Phones =====================*/

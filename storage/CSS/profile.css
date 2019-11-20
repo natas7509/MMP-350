@@ -29,12 +29,10 @@ textarea {
 	padding: 10px;
 }
 
-#profile .btn {
-	width: 70%;
-}
+#profile .btn {}
 
 #user-info #logout-button {
-	width: 60%;
+	margin-bottom: 1rem;
 }
 
 #user-info {
