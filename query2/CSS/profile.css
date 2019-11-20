@@ -9,7 +9,7 @@
 
 textarea,
 button {
-	/* margin: 0 .5rem 0 0; */
+	margin: 0 .5rem .5rem 0;
 	padding: .3;
 	font-size: inherit;
 	text-align: center;
@@ -21,16 +21,20 @@ input {
 	margin-right: .5rem;
 }
 
-/* textarea {
+textarea {
 	height: 100px;
-} */
+}
 
 ::-webkit-input-placeholder {
 	padding: 10px;
 }
 
+#profile .btn {
+	width: 70%;
+}
+
 #user-info #logout-button {
-	margin-bottom: 1rem;
+	width: 60%;
 }
 
 #user-info {

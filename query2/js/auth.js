@@ -3,12 +3,13 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const message = document.getElementById("login-message");
 
-loginButton.onclick = function(event) {
+loginButton.onclick = function(e) {
   const promise = firebase
     .auth()
     .signInWithEmailAndPassword(emailInput.value, passwordInput.value);
   promise.catch(function(error) {
-    message.textContent = error.message;
+    message.textContent =
+      error.message + " Perhaps it's time to get rid of hotmail ?";
   });
 };
 
@@ -28,18 +29,22 @@ firebase.auth().onAuthStateChanged(function(user) {
       const userInfo = snapshot.val();
       displayName.textContent = "Welcome, " + userInfo.displayName;
 
+      // =============== MY WORK ================
+      // check for image and then add
       if (userInfo.imageURL) {
         document.getElementById("edit-profile-image").src = userInfo.imageURL;
       }
     });
 
     const profileButton = document.getElementById("edit-profile");
-    profileButton.onclick = function() {
-      location.href = "profile.html?uid=" + user.uid;
-    };
+    if (profileButton) {
+      profileButton.onclick = function() {
+        location.href = "profile.html?uid=" + user.uid;
+      };
+    }
   } else {
     document.body.classList.remove("auth");
-    displayName.textContent = "";
+    displayName.textContent = " This is not your account!";
   }
 });
 

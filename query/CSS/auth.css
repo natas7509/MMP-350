@@ -1,14 +1,42 @@
 #user-info {
   display: none;
-  grid-column: 2/3;
   text-align: center;
 }
+
 .auth #user-info {
   display: block;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  max-width: 500px;
+  margin: auto;
 }
+
 .auth #login {
   display: none;
 }
+
 #login h3 {
   padding: 1em;
+}
+
+
+#user-info {
+  display: none;
+}
+
+.auth #user-info {
+  display: block;
+  width: 100%;
+}
+
+.auth #login {
+  display: none;
+}
+
+#write-post {
+  display: none;
+}
+
+.auth #write-post {
+  display: block;
 }
