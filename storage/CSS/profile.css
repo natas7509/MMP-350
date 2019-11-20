@@ -21,15 +21,13 @@ input {
 	margin-right: .5rem;
 }
 
-textarea {
+/* textarea {
 	height: 100px;
-}
+} */
 
 ::-webkit-input-placeholder {
 	padding: 10px;
 }
-
-#profile .btn {}
 
 #user-info #logout-button {
 	margin-bottom: 1rem;
