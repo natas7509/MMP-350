@@ -88,27 +88,31 @@ header {
 	padding: 1em;
 }
 
-#main {
+/* #main {
 	display: flex;
 }
 
 #main div {
 	flex: 1;
+} */
+
+#main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 #main .skate-img {
 	background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
-	height: 50vh;
+	grid-column: 1/2;
+	grid-row: 3/4;
 }
 
-/* =========== ATTACH BOX =========================================== */
+.attach-files {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	padding: 2em;
+}
 
-/* #attach {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-row: 4/5;
-	border: red solid 1px;
-} */
 
 .info {
 	grid-column: 1/2;
