@@ -69,29 +69,29 @@ imageButton.addEventListener('click', function () {
 
 /*================ ADDING ANY IMAGE TO YOUR POST ================*/
 
-// const imageButton = document.getElementById('submit-image');
-// imageButton.addEventListener('click', function () {
-// 	// get the file
-// 	const file = document.getElementById('image-file').files[0];
-// 	if (file) {
-// 		// upload the file
-// 		const storage = firebase.storage();
-// 		const user = firebase.auth().currentUser;
-// 		const ref = storage.ref('users').child(user.uid).child('profile-image');
-// 		const promise = ref.put(file);
+const imageButton = document.getElementById('submit-image');
+imageButton.addEventListener('click', function () {
+	// get the file
+	const file = document.getElementById('image-file').files[0];
+	if (file) {
+		// upload the file
+		const storage = firebase.storage();
+		const user = firebase.auth().currentUser;
+		const ref = storage.ref('users').child(user.uid).child('profile-image');
+		const promise = ref.put(file);
 
-// 		promise.then(function (image) {
-// 			return image.ref.getDownloadURL();
-// 		}).then(function (url) {
-// 			user.updateProfile({
-// 				url: url
-// 			});
-// 			document.getElementById('profile-image').src = url;
-// 			document.getElementById('add-image').style.display = 'none';
-// 			firebase.database().ref('users').child(user.uid).update({
-// 				imageURL: url
-// 			});
-// 		});
-// 	}
+		promise.then(function (image) {
+			return image.ref.getDownloadURL();
+		}).then(function (url) {
+			user.updateProfile({
+				url: url
+			});
+			document.getElementById('profile-image').src = url;
+			document.getElementById('add-image').style.display = 'none';
+			firebase.database().ref('users').child(user.uid).update({
+				imageURL: url
+			});
+		});
+	}
 
-// });
+});

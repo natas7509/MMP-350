@@ -1,57 +1,76 @@
-const posts = document.getElementById('posts');
-const postRef = firebase.database().ref('posts');
-
+const posts = document.getElementById("posts");
+const postRef = firebase.database().ref("posts");
 
 function loadPosts() {
-	postRef.on('child_added', function (snapshot) {
-		createPost(snapshot.val());
-	});
+  postRef.on("child_added", function(snapshot) {
+    createPost(snapshot.val());
+  });
 }
 
 function createElement(_class, text) {
-	const element = document.createElement('div');
-	element.classList.add(_class);
-	element.textContent = text;
-	return element;
+  const element = document.createElement("div");
+  element.classList.add(_class);
+  element.textContent = text;
+  return element;
 }
 
 function createPost(data) {
-	const post = createElement('post');
-	const text = createElement('text', data.text);
-	const author = createElement('author', 'by ' + users[data.uid].displayName);
+  const post = createElement("post");
+  const text = createElement("text", data.text);
+  const author = createElement("author", "by " + users[data.uid].displayName);
 
-	var d = new Date(data.date);
-	const date = createElement('date', (d.getMonth() + 1) + "." + d.getDate() + "." + d.getFullYear());
+  var d = new Date(data.date);
+  const date = createElement(
+    "date",
+    d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear()
+  );
 
-	//	posts.appendChild(post);
-	posts.insertBefore(post, posts.firstElementChild);
-	if (users[data.uid].imageURL) {
-		const userImage = new Image();
-		userImage.src = users[data.uid].imageURL;
-		userImage.classList.add('user-image');
-		post.appendChild(userImage);
-	}
+  //	posts.appendChild(post);
+  posts.insertBefore(post, posts.firstElementChild);
 
-	post.appendChild(text);
-	post.appendChild(author);
-	post.appendChild(date);
-}
+  /* adding user profile image */
+  const img = new Image();
+  if (users[data.uid].imageURL) {
+    img.src = users[data.uid].imageURL;
+  } else {
+    img.src = "images/logo.png";
+  }
+  img.classList.add("profile-image");
 
+  post.appendChild(img);
+  post.appendChild(text);
+  post.appendChild(author);
+  post.appendChild(date);
 
+  /*====ATTACHING AN IMAGE FROM ANY USER TO "POST"=================*/
 
-
+  /* adding ATTACHMENT image */
+  //  const attachImg = new Image();
+  //  if (users[data.uid].imageURL) {
+  //    attachImg.src = users[data.uid].imageURL;
+  //  } else {
+  //    attachImg.src.style.display = "none";
+  //  }
+  //  attachImg.classList.add("attach-image");
+} //======== END createPost FUNCTION ==========
 
 /* get users */
 let userCount = 0;
 const users = {};
-firebase.database().ref('users').on('child_added', function (snapshot) {
-	// users[snapshot.key] = snapshot.val().displayName;
-	users[snapshot.key] = snapshot.val();
-	userCount += 1;
-});
+firebase
+  .database()
+  .ref("users")
+  .on("child_added", function(snapshot) {
+    // users[snapshot.key] = snapshot.val().displayName;
+    users[snapshot.key] = snapshot.val();
+    userCount += 1;
+  });
 
-firebase.database().ref('users').once('value', function (snapshot) {
-	if (userCount === snapshot.numChildren()) {
-		loadPosts();
-	}
-});
+firebase
+  .database()
+  .ref("users")
+  .once("value", function(snapshot) {
+    if (userCount === snapshot.numChildren()) {
+      loadPosts();
+    }
+  });

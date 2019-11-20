@@ -24,6 +24,7 @@
 /*Responsive Syles*/
 
 @import "CSS/responsive.css";
+
 * {
 	box-sizing: border-box;
 }

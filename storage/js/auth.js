@@ -26,27 +26,22 @@ firebase.auth().onAuthStateChanged(function (user) {
 			const userInfo = snapshot.val();
 			displayName.textContent = "Welcome, " + userInfo.displayName;
 
-			// =============== MY WORK ================
-			// check for image and then add 
 			if (userInfo.imageURL) {
-				document.getElementById('edit-profile-image').src = userInfo.imageURL;
+				document.getElementById("edit-profile-image").src = userInfo.imageURL;
 			}
 		});
 
 		const profileButton = document.getElementById("edit-profile");
-		if (profileButton) {
-			profileButton.onclick = function () {
-				location.href = "profile.html?uid=" + user.uid;
-			};
-		}
-
-
+		profileButton.onclick = function () {
+			location.href = "profile.html?uid=" + user.uid;
+		};
 
 	} else {
 		document.body.classList.remove('auth');
-		displayName.textContent = " This is not your account!";
+		displayName.textContent = "";
 	}
 });
+
 
 /* log out */
 const logoutButton = document.getElementById("logout-button");
