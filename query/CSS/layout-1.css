@@ -2,29 +2,26 @@
 Utilitys
 ------------------------------ */
 
-
-/*@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");*/
-
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	color: var(--text-color);
+    color: var(--text-color);
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 p {
-	padding: 1em;
+    padding: 1em;
 }
 
 h1,
@@ -33,40 +30,40 @@ h3,
 h4,
 h5,
 h6 {
-	text-align: center;
+    text-align: center;
 }
 
 .btn {
-	font-size: 15px;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	padding: 13px 20px;
-	cursor: pointer;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
 }
 
 .btn:hover {
-	background: var(--accent2);
-	color: #fff;
-	cursor: pointer;
-	transform: translate(2px, 1.2px);
-	transition: 0.6s;
+    background: var(--accent2);
+    color: #fff;
+    cursor: pointer;
+    transform: translate(2px, 1.2px);
+    transition: 0.6s;
 }
 
 img {
-	max-width: 100%;
-	margin-bottom: 1em;
+    max-width: 100%;
+    margin-bottom: 1em;
 }
 
 .image-caption {
-	font-size: 2em;
-	text-align: center;
-	margin-bottom: 1em;
-	color: #f4f4f4;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #f4f4f4;
 }
 
 #main h2 {
-	padding-top: 1em;
+    padding-top: 1em;
 }
 
 /*------------------------------------
@@ -74,82 +71,88 @@ BODY STYLES
 ------------------------------------*/
 
 #container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-row-gap: 0.6em;
-	max-width: 1200px;
-	margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0.6em;
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
-	grid-column: 1/4;
-	padding: 1em;
+    grid-column: 1/4;
+    padding: 1em;
 }
 
 #main {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #main .skate-img {
-	background: url("/MMP-350/responsive/skate1.jpg") no-repeat top center/cover;
-	grid-column: 1/2;
-	grid-row: 4/5;
+    background: url("/MMP-350/responsive/images/skate1.jpg") no-repeat top center/cover;
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 
 .attach-files {
-	grid-column: 2/3;
-	grid-row: 4/5;
-	padding: 2em;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding: 2em;
 }
 
 .info {
-	grid-column: 1/2;
-	grid-row: 4/5;
-	padding: 2em;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding: 2em;
+}
+
+.blog {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 2em;
 }
 
 #login {
-	grid-column: 1/4;
-	grid-row: 4/5;
-	background: #eef8ff;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background: #eef8ff;
 }
 
 #login .account {
-	display: block;
+    display: block;
 }
 
 #login-message {
-	color: var(--textDrk);
-	padding: 1rem;
-	max-width: 180px;
+    color: var(--textDrk);
+    padding: 1rem;
+    max-width: 180px;
 }
 
 #login .account h6 {
-	color: #555;
-	align-self: center;
-	font-size: inherit;
+    color: #555;
+    align-self: center;
+    font-size: inherit;
 }
 
 #login .account p a {
-	color: #0000ee;
+    color: #0000ee;
 }
 
 #error-message {
-	color: #222;
-	margin: 4em 0;
-	text-align: center;
+    color: #222;
+    margin: 4em 0;
+    text-align: center;
 }
 
 #social {
-	grid-column: 1/4;
-	background: #666;
+    grid-column: 1/4;
+    background: #666;
 }
 
 #social ul {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 2rem 0;
-	background: #222;
-	color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    background: #222;
+    color: #fff;
 }

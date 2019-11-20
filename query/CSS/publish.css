@@ -1,15 +1,15 @@
 #write-post {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #main .compose-img {
-	background: url("/MMP-350/typography/blogger.jpg") no-repeat top center/cover;
-	margin-right: .7em;
-	border: solid 1px red;
+    background: url("/MMP-350/typography/images/blogger.jpg") no-repeat top center/cover;
+    margin-right: .7em;
+    border: solid 1px red;
 }
 
 #main .choose-files {
-	border: solid 1px red;
-	flex-basis: content;
+    border: solid 1px red;
+    flex-basis: content;
 }
