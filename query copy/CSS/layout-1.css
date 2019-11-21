@@ -34,8 +34,9 @@ h6 {
 }
 
 .btn {
-	text-align: center;
 	font-size: 15px;
+	justify-content: center;
+	align-items: center;
 	border: none;
 	padding: 13px 20px;
 	cursor: pointer;
@@ -71,13 +72,11 @@ BODY STYLES
 
 #container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-row-gap: 0.6em;
 	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
+	margin: auto;
 }
-
 
 header {
 	grid-column: 1/4;
@@ -89,15 +88,15 @@ header {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-/* #main .skate-img {
+#main .skate-img {
 	background: url("/MMP-350/responsive/images/skate1.jpg") no-repeat top center/cover;
 	grid-column: 1/2;
 	grid-row: 4/5;
-} */
+}
 
 .attach-files {
 	grid-column: 2/3;
-	grid-row: 2/3;
+	grid-row: 4/5;
 	padding: 2em;
 }
 
@@ -113,6 +112,11 @@ header {
 	padding: 2em;
 }
 
+.blog {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	padding: 2em;
+}
 
 #login {
 	grid-column: 1/3;

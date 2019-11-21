@@ -29,13 +29,13 @@ input {
   color: #f4f4f4;
 }
 
-#login {
+/* #login {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
   color: #fff;
-}
+} */
 
 #create-button input,
 h3 {

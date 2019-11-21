@@ -30,6 +30,7 @@ input {
 
 #user-info {
     grid-row: 3/4;
+    border: var(--borders) 1px solid;
 }
 
 .input-icons i {
