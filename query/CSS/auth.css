@@ -1,42 +1,39 @@
 #user-info {
-  display: none;
-  text-align: center;
+	display: none;
+	text-align: center;
 }
-
 .auth #user-info {
-  display: block;
-  grid-column: 1/4;
-  grid-row: 3/4;
-  max-width: 500px;
-  margin: auto;
+	display: block;
+	grid-column: 1/4;
+	grid-row: 3/4;
+	max-width: 500px;
+	margin: auto;
 }
-
 .auth #login {
-  display: none;
+	display: none;
 }
-
 #login h3 {
-  padding: 1em;
+	padding: 1em;
 }
-
-
 #user-info {
-  display: none;
+	display: none;
 }
-
 .auth #user-info {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
-
+#profile {
+	display: none;
+}
+.auth #profile {
+	display: block;
+}
 .auth #login {
-  display: none;
+	display: none;
 }
-
 #write-post {
-  display: none;
+	display: none;
 }
-
 .auth #write-post {
-  display: block;
+	display: block;
 }
