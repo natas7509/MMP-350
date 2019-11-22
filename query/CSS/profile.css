@@ -6,6 +6,12 @@
     margin-top: 1rem;
 }
 
+#profile {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+}
+
 
 textarea,
 button {
@@ -15,9 +21,9 @@ button {
     border: 1px solid #ccc;
 }
 
-input {
+/* input {
     margin-right: .5rem;
-}
+} */
 
 
 ::-webkit-input-placeholder {
@@ -34,6 +40,9 @@ input {
 
 .input-icons i {
     position: absolute;
+    margin-bottom: 2px;
+    line-height: .2;
+
 }
 
 .input-icons {

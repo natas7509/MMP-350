@@ -21,14 +21,17 @@
 
 #post-text {
     width: 100%;
-    height: 350px
+    height: 250px;
+    margin-bottom: 2em;
+    ;
 }
 
 #posts .profile-image {
     width: 120px;
 }
 
-#write-post #edit-profile-image {
-    width: 100px;
+#edit-profile-image {
+    grid-column: 1/2;
+    width: 400px;
     margin: 0 auto .5em auto;
 }
