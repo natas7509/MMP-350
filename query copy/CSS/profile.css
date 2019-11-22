@@ -1,4 +1,4 @@
-.profile-wrapper {
+/* .profile-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,6 @@ input {
 
 #user-info {
     grid-row: 3/4;
-    border: var(--borders) 1px solid;
 }
 
 .input-icons i {
@@ -53,4 +52,4 @@ input {
     width: 100%;
     padding: 10px;
     text-align: center;
-}
+} */

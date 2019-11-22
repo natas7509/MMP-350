@@ -1,15 +1,10 @@
-#write-post {
-    display: flex;
-    flex-direction: column;
+/* .blog {
+    text-align: center;
 }
 
-#main .compose-img {
-    background: url("/MMP-350/typography/images/blogger.jpg") no-repeat top center/cover;
-    margin-right: .7em;
-    border: solid 1px red;
-}
+
 
 #main .choose-files {
     border: solid 1px red;
     flex-basis: content;
-}
+} */

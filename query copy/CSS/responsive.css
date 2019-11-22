@@ -1,4 +1,4 @@
-@media (max-width: 450px) {
+/*@media (max-width: 450px) {
     #container {
         display: grid;
         width: 100%;
@@ -72,7 +72,7 @@
     }
 
     #social li {
-        /* font-size: 3.1em; */
+        
         text-align: center;
         padding: 0.7em;
         margin: 0.5em;
@@ -81,10 +81,7 @@
 
 }
 
-/*  ============== End Phones =====================*/
 
-
-/*  ============== Start iPad =====================*/
 
 @media (min-width: 451px) and (max-width: 768px) {
     #main .skate-img {
@@ -99,4 +96,4 @@
 
 }
 
-/*  ============== End iPad =====================*/
+  
