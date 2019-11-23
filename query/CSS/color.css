@@ -75,6 +75,10 @@
     color: var(--link-color);
 }
 
+#menu ul li a:hover {
+    color: var(--btnHover);
+}
+
 .title {
     background-color: var(--bgLight);
 }
