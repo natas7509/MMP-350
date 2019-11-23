@@ -1,53 +1,44 @@
 function createElement(_class, text) {
-	const element = document.createElement("div");
+	const element = document.createElement('div');
 	element.classList.add(_class);
 	element.textContent = text;
 	return element;
 }
 
-function createPost(data, user) {
-	const post = createElement("post");
-	const text = createElement("text", data.text);
-	const author = createElement("author", "by ");
-	const authorLink = document.createElement("a");
-	authorLink.href = "user.html?uid=" + data.uid;
-	authorLink.textContent = user.displayName;
+function createPost(postData, userData, postId) {
+	const post = createElement('post'); // container element
+	const text = createElement('text', postData.text);
+	const author = createElement('author', 'by ');
+	const authorLink = document.createElement('a');
+	authorLink.href = 'user.html?uid=' + postData.uid;
+	authorLink.textContent = userData.displayName;
+	console.log(user);
 	author.appendChild(authorLink);
 
-	var d = new Date(data.date);
-	const date = createElement(
-		"date",
-		d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear()
-	);
+	var d = new Date(postData.date);
+	const date = createElement('date', (d.getMonth() + 1) + "." + d.getDate() + "." + d.getFullYear());
 
 	//	posts.appendChild(post);
 	posts.insertBefore(post, posts.firstElementChild);
 
 	/* adding user profile image */
 	const img = new Image();
-	if (user.imageURL) {
-		img.src = user.imageURL;
+	if (userData.imageURL) {
+		img.src = userData.imageURL;
 	} else {
-		img.src = "images/logo.png";
+		img.src = 'images/logo.png';
 	}
-	img.classList.add("profile-image");
+	img.classList.add('profile-image');
+
+	/* link to the post - permanent link */
+	const postLink = document.createElement('a');
+	postLink.href = 'post.html?id=' + postId;
+	postLink.textContent = "Permalink";
 
 	post.appendChild(img);
 	post.appendChild(text);
 	post.appendChild(author);
 	post.appendChild(date);
+	post.appendChild(postLink);
+
 }
-
-/*REPLACE THIS PAGE*/
-
-
-/*====ATTACHING AN IMAGE FROM ANY USER TO "POST"=================*/
-
-/* adding ATTACHMENT image */
-//  const attachImg = new Image();
-//  if (users[data.uid].imageURL) {
-//    attachImg.src = users[data.uid].imageURL;
-//  } else {
-//    attachImg.src.style.display = "none";
-//  }
-//  attachImg.classList.add("attach-image");
