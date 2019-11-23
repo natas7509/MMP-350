@@ -11,6 +11,13 @@
 	margin: auto;
 }
 
+.auth #user-info #line {
+	width: 105px;
+	border: solid #f4f4f4 1px;
+	/* text-align: center; */
+	margin: -.7em auto 1.3em auto;
+}
+
 .auth #login {
 	display: none;
 }
@@ -28,12 +35,17 @@
 	width: 100%;
 }
 
+.auth #user-info p {
+	font-size: 4vmin;
+}
+
 #profile {
 	display: none;
 }
 
 .auth #profile {
 	display: block;
+	margin-bottom: 1rem;
 }
 
 .auth #login {

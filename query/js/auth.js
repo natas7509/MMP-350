@@ -3,11 +3,11 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const message = document.getElementById("login-message");
 
-loginButton.onclick = function(event) {
+loginButton.onclick = function (event) {
   const promise = firebase
     .auth()
     .signInWithEmailAndPassword(emailInput.value, passwordInput.value);
-  promise.catch(function(error) {
+  promise.catch(function (error) {
     message.textContent = error.message;
   });
 };
@@ -15,7 +15,7 @@ loginButton.onclick = function(event) {
 /* auth state */
 const displayName = document.getElementById("user-name");
 
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     document.body.classList.add("auth");
 
@@ -24,9 +24,10 @@ firebase.auth().onAuthStateChanged(function(user) {
       .database()
       .ref("users")
       .child(user.uid);
-    userRef.on("value", function(snapshot) {
+    userRef.on("value", function (snapshot) {
       const userInfo = snapshot.val();
       displayName.textContent = "Welcome, " + userInfo.displayName;
+      document.getElementById = ("line");
 
       if (userInfo.imageURL) {
         document.getElementById("edit-profile-image").src = userInfo.imageURL;
@@ -34,7 +35,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     });
 
     const profileButton = document.getElementById("edit-profile");
-    profileButton.onclick = function() {
+    profileButton.onclick = function () {
       location.href = "profile.html?uid=" + user.uid;
     };
   } else {
@@ -45,6 +46,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 /* log out */
 const logoutButton = document.getElementById("logout-button");
-logoutButton.onclick = function() {
+logoutButton.onclick = function () {
   firebase.auth().signOut();
 };

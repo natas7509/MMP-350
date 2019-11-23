@@ -22,11 +22,11 @@ body {
 }
 
 
-.post {
+/* .post {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--link-color)
-}
+} */
 
 .post .text {
 	font-family: var(--text-font);

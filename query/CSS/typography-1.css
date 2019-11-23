@@ -23,23 +23,6 @@ body {
 	text-transform: uppercase;
 }
 
-
-.post {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--link-color)
-}
-
-.post .text {
-	font-family: var(--text-font);
-	background-color: var(--link-color);
-	color: var(--main-text);
-	padding: .5em;
-	text-align: left;
-	margin-bottom: .5em;
-
-}
-
 header {
 	font-size: 3vmin;
 }

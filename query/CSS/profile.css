@@ -12,20 +12,6 @@
     text-align: center;
 }
 
-
-textarea,
-button {
-    padding: .3;
-    font-size: inherit;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-/* input {
-    margin-right: .5rem;
-} */
-
-
 ::-webkit-input-placeholder {
     padding: 10px;
 }

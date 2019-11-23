@@ -1,21 +1,47 @@
-  #users {
-    padding: 1em;
-  }
+/* .users-container {
+  display: grid;
+  grid-template-columns: 1/4;
+} */
 
-  .user {
-    border: 1px solid var(--accent-one);
-    margin: 0.5em 0;
-    padding: 1em;
-  }
+#users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 5/6;
+  grid-gap: 0.6em;
+  text-align: center;
+  background-color: var(--accent-three);
+}
 
-  .user .name {
-    font-size: 1.5em;
-  }
+#users {
+  padding: 1em;
+}
 
-  .user .bio {
-    font-family: var(--text-font);
-  }
+.user {
+  border: 1px solid #ccc;
+  border-radius: 5.2px;
+  margin: 0.5em 0;
+  padding: 1em;
+}
 
-  .user img {
-    width: 100px;
-  }
+.user .name {
+  font-size: 1.5em;
+  padding: .5em;
+
+}
+
+.user .bio {
+  padding: .5em;
+  font-family: var(--text-font);
+}
+
+.user img {
+  width: 40vmin;
+  max-height: 50vh;
+  margin-top: 1em;
+}
+
+#login {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  background: #eef8ff;
+}
