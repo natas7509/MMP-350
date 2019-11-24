@@ -1,0 +1,50 @@
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#profile {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    padding: 10px;
+}
+
+#user-info #logout-button {
+    margin-bottom: 1rem;
+}
+
+/* #user-info {
+    grid-row: 3/4;
+} */
+
+.input-icons i {
+    position: absolute;
+    margin-bottom: 2px;
+    line-height: .2;
+
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-top: 1.3rem;
+    color: green;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
