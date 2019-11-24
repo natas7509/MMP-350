@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final | home</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+			authDomain: "mmp-three-fifty.firebaseapp.com",
+			databaseURL: "https://mmp-three-fifty.firebaseio.com",
+			projectId: "mmp-three-fifty",
+			storageBucket: "mmp-three-fifty.appspot.com",
+			messagingSenderId: "29267025222",
+			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</head>
+
+
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<ul>
+
+				<li><img src="images/logo_2.png" alt="MMP-350 APP">
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="users.html">Users</a></li>
+				</li>
+			</ul>
+		</div>
+
+		<header id="showcase">
+			<div class="showcase-content">
+				<h1 class="l-heading">
+					MMP-350<span class="text-primary-3"> Blog</span>
+				</h1>
+				<div class="lead">
+					<p>“Welcome to the MMP-350 class blog - where students get to update each other on social
+						activities,
+						current events, and everyday life in New York ”</p>
+				</div>
+				<a href="users.html" class="btn">Class List</a>
+			</div>
+		</header>
+
+
+		<div id="user-info">
+			<p id="user-name"></p>
+			<button id="logout-button" class="btn">Logout</button>
+		</div>
+
+		<div id="main">
+			<div id="write-post">
+				<textarea id="post-text" placeholder="Compose a new post"></textarea>
+				<button id="publish" class="btn">Publish</button>
+			</div>
+		</div>
+
+		<div id="profile">
+			<img id="edit-profile-image" src="images/subwayFace.jpg" alt="">
+			<button id="edit-profile" class="btn">Edit Profile</button>
+		</div>
+
+
+
+
+
+
+
+		<div id="login">
+			<input id="email" type="text" placeholder="email">
+			<input id="password" type="password" placeholder="Password">
+			<button id="login-button" class="btn">Login</button>
+			<div class="account">
+				<p id="login-message"></p>
+				<h6>Not a Member yet?</h6>
+				<p><a href="create.html">Create new account</a></p>
+			</div>
+		</div>
+
+		<!-- POSTS SIT UNDERNEATH IN SEPARATE CONTAINER -->
+		<div id="posts"></div>
+
+
+
+
+		<div id="social">
+			<ul>
+				<li>twitter</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Linkedin</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<script src="js/auth.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/posts.js"></script>
+	<script src="js/index.js"></script>
+
+
+</body>
+
+
+</html>

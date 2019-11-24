@@ -1,0 +1,36 @@
+#posts {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    grid-gap: 0.6em;
+    text-align: center;
+}
+
+
+.post {
+    background: url(../images/fixed.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#posts .post .text {
+    padding: .5em 1em;
+    line-height: 1.5;
+}
+
+#post-text {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2em;
+}
+
+#posts .profile-image {
+    width: 150px;
+}
+
+#edit-profile-image {
+    display: flex;
+    width: 100%;
+    margin: 0 auto .5em auto;
+}

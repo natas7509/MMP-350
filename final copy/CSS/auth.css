@@ -1,0 +1,35 @@
+#user-info {
+	display: none;
+}
+
+#profile {
+	display: none;
+}
+
+#profile .btn {
+	width: 100%;
+}
+
+.auth #user-info {
+	display: block;
+	align-self: center;
+}
+
+.auth #profile {
+	display: block;
+}
+
+.auth #login {
+	display: none;
+}
+
+#write-post {
+	display: none;
+	align-self: end;
+}
+
+.auth #write-post {
+	display: flex;
+	flex-direction: column;
+
+}
