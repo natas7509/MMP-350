@@ -2,7 +2,7 @@ const posts = document.getElementById("posts");
 const postRef = firebase.database().ref("posts");
 
 function loadPosts() {
-  postRef.on("child_added", function(snapshot) {
+  postRef.on('child_added', function (snapshot) {
     createPost(snapshot.val());
   });
 }
@@ -42,25 +42,25 @@ function createPost(data) {
   post.appendChild(author);
   post.appendChild(date);
 
-  /*====ATTACHING AN IMAGE FROM ANY USER TO "POST"=================*/
 
-  /* adding ATTACHMENT image */
-  //  const attachImg = new Image();
-  //  if (users[data.uid].imageURL) {
-  //    attachImg.src = users[data.uid].imageURL;
-  //  } else {
-  //    attachImg.src.style.display = "none";
-  //  }
-  //  attachImg.classList.add("attach-image");
-} //======== END createPost FUNCTION ==========
 
-/* get users */
+  //  adding ATTACHMENT image 
+  // const attachImg = new Image();
+  // if (users[data.uid].imageURL) {
+  //   attachImg.src = users[data.uid].imageURL;
+  // } else {
+  //   attachImg.src.style.display = "none";
+  // }
+  // attachImg.classList.add("attach-image");
+}
+
+// get users
 let userCount = 0;
 const users = {};
 firebase
   .database()
   .ref("users")
-  .on("child_added", function(snapshot) {
+  .on("child_added", function (snapshot) {
     // users[snapshot.key] = snapshot.val().displayName;
     users[snapshot.key] = snapshot.val();
     userCount += 1;
@@ -69,7 +69,7 @@ firebase
 firebase
   .database()
   .ref("users")
-  .once("value", function(snapshot) {
+  .once("value", function (snapshot) {
     if (userCount === snapshot.numChildren()) {
       loadPosts();
     }
