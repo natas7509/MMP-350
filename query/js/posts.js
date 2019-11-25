@@ -12,7 +12,6 @@ function createPost(postData, userData, postId) {
 	const authorLink = document.createElement('a');
 	authorLink.href = 'user.html?uid=' + postData.uid;
 	authorLink.textContent = userData.displayName;
-	console.log(user);
 	author.appendChild(authorLink);
 
 	var d = new Date(postData.date);
