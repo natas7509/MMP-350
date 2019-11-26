@@ -49,16 +49,26 @@ function createPost(data) {
 	post.appendChild(date);
 
 
-	//  adding ATTACHMENT image 
+
+	// adding ATTACHMENT image
+	// const attachImg = new Image();
+	// if (data.imageURL) {
+	// 	attachImg.src = data[data.uid].imageURL;
+	// } else {
+	// 	attachImg.src.style.display = "none";
+	// }
+	// attachImg.classList.add("attach-image");
+
 	const attachImg = new Image();
 	if (data.imageURL) {
-		attachImg.src = data[data.uid].imageURL;
+		attachImg.src = data.imageURL;
 	} else {
 		attachImg.src.style.display = "none";
 	}
 	attachImg.classList.add("attach-image");
-}
 
+
+}
 
 
 // get users
