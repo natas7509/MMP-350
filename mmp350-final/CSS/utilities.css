@@ -7,7 +7,7 @@
 }
 
 body {
-  color: var(--text-color);
+  color: var(--bgDark);
 }
 
 .l-heading {
@@ -21,7 +21,6 @@ body {
   margin-bottom: 0.75rem;
   line-height: 1.3;
   margin: 0 8em;
-  /* max-width: 200px; */
 }
 
 ul {
@@ -48,11 +47,10 @@ h6 {
   border: none;
   padding: 13px 20px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .btn:hover {
-  background: var(--accent2);
-  color: #fff;
   cursor: pointer;
   transform: translate(2px, 1.2px);
   transition: 0.6s;
