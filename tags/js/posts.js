@@ -6,11 +6,11 @@ function createElement(_class, text) {
 }
 
 function createPost(postData, userData, postId) {
+	const userData = _userData || {
+		displayName: "Anonymous"
+	};
 	const post = createElement('post'); // container element
 	const text = createElement('text', postData.text);
-	var userData = users[data.uid] ? users[data.uid] : {
-		displayName: "anonymous"
-	};
 	const author = createElement('author', 'by ');
 	const authorLink = document.createElement('a');
 	authorLink.href = 'user.html?uid=' + postData.uid;
@@ -37,7 +37,15 @@ function createPost(postData, userData, postId) {
 	postLink.href = 'post.html?id=' + postId;
 	postLink.textContent = "Permalink";
 
-	//ADD CLASSWORK HERE BELOW
+	if (postData.tags) {
+		var textHTML = postData.text;
+		for (const tag in postData.tags) {
+			const re = new RegExp('#' + tag, 'g');
+			textHTML = textHTML.replace(re, '<a href="tags.html?tag=' + tag + '">#' + tag + '</a>');
+		}
+		text.innerHTML = textHTML;
+	}
+
 
 
 	post.appendChild(img);

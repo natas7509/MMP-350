@@ -18,7 +18,14 @@ function publishPost() {
 
 
 
-	//ADD CODE HERE FROM "TAGS"
+	const tags = postText.value.match(/#[a-z0-9]+/gi);
+	if (tags) {
+		post.tags = {};
+		for (let i = 0; i < tags.length; i++) {
+			const tag = tags[i].replace('#', '');
+			post.tags[tag] = true;
+		}
+	}
 
 
 

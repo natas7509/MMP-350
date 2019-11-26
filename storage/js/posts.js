@@ -17,6 +17,7 @@ function createElement(_class, text) {
 
 /*THIS WAS THE FIREBASE ERROR FIX*/
 function createPost(data) {
+
 	const post = createElement("post");
 	const text = createElement("text", data.text);
 	var userData = users[data.uid] ? users[data.uid] : {
@@ -57,6 +58,8 @@ function createPost(data) {
 	}
 	attachImg.classList.add("attach-image");
 }
+
+
 
 // get users
 let userCount = 0;

@@ -43,8 +43,6 @@ function addImage(postId) {
 	}
 }
 
-
-//WORK ON BELOW TO GET YOUR IMAGETOPOST TO WORK
 let file;
 
 const imageButton = document.getElementById('submit-image');
