@@ -12,7 +12,7 @@ loginButton.onclick = function (e) {
 	});
 };
 
-/* auth state */
+// auth state
 const displayName = document.getElementById("user-name");
 
 firebase.auth().onAuthStateChanged(function (user) {
@@ -20,7 +20,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 	if (user) {
 		document.body.classList.add('auth');
 
-		/* find user in database */
+		//  find user in database 
 		const userRef = firebase.database().ref('users').child(user.uid);
 		userRef.on('value', function (snapshot) {
 			const userInfo = snapshot.val();
@@ -43,7 +43,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 
-/* log out */
+// log out
 const logoutButton = document.getElementById("logout-button");
 logoutButton.onclick = function () {
 	firebase.auth().signOut();
