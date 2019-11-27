@@ -56,3 +56,10 @@ function createPost(postData, _userData, postId) {
 	post.appendChild(postLink);
 
 }
+
+
+// const attachImg = new Image();
+// if (data.imageURL) {
+// 	attachImg.src = data.imageURL;
+// }
+// attachImg.classList.add('attach-image');

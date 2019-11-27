@@ -25,9 +25,27 @@ function publishPost() {
 		}
 	}
 
-
 	// push post to database
 	ref.push(post);
 
 	postText.value = ""; // reset the textarea
+}
+
+let file;
+
+function attachImage(postId) {
+	// upload the file
+	const storage = firebase.storage();
+	const user = firebase.auth().currentUser;
+	const ref = storage.ref('posts').child(postId).child('post-image');
+
+	const promise = ref.put(file);
+
+	promise.then(function (image) {
+		return image.ref.getDownloadURL();
+	}).then(function (url) {
+		ref.child(postId).update({
+			imageURL: url
+		});
+	});
 }
