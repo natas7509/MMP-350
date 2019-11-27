@@ -43,30 +43,17 @@ function createPost(data) {
 	}
 	img.classList.add("profile-image");
 
+	const postImg = new Image();
+	if (data.imageURL) {
+		postImg.src = data.imageURL;
+	}
+	postImg.classList.add('post-image');
+
 	post.appendChild(img);
 	post.appendChild(text);
 	post.appendChild(author);
 	post.appendChild(date);
-
-
-
-	// adding ATTACHMENT image
-	// const attachImg = new Image();
-	// if (data.imageURL) {
-	// 	attachImg.src = data[data.uid].imageURL;
-	// } else {
-	// 	attachImg.src.style.display = "none";
-	// }
-	// attachImg.classList.add("attach-image");
-
-	const attachImg = new Image();
-	if (data.imageURL) {
-		attachImg.src = data.imageURL;
-	} else {
-		attachImg.src.style.display = "none";
-	}
-	attachImg.classList.add("attach-image");
-
+	post.appendChild(postImg);
 
 }
 
@@ -95,49 +82,11 @@ firebase
 
 
 
-
-/*SHANNON*/
-//function createElement(_class, text) {
-//	const element = document.createElement('div');
-//	element.classList.add(_class);
-//	element.textContent = text;
-//	return element;
-//}
-//
-//function createPost(data, user) {
-//	const post = createElement('post');
-//	const text = createElement('text', data.text);
-//	const author = createElement('author', 'by ');
-//	const authorLink = document.createElement('a');
-//	authorLink.href = 'user.html?uid=' + data.uid;
-//	authorLink.textContent = user.displayName;
-//	author.appendChild(authorLink);
-//	
-//	var d = new Date(data.date);
-//	const date = createElement('date',(d.getMonth() + 1) + "." +  d.getDate() + "." + d.getFullYear());
-//	
-////	posts.appendChild(post);
-//	posts.insertBefore(post, posts.firstElementChild);
-//	
-//	/* adding user profile image */
-//	const img = new Image();
-//	if (user.imageURL) {
-//		img.src = user.imageURL;
-//	} else {
-//		img.src = 'images/egg.jpg';
-//	}
-//	img.classList.add('profile-image');
-//    
-//    const postImg = new Image();
-//	if (data.imageURL) {
-//		postImg.src = data.imageURL;
-//	}
-//	postImg.classList.add('post-image');
-//	
-//	post.appendChild(img);
-//	post.appendChild(text);
-//	post.appendChild(author);
-//	post.appendChild(date);
-//    post.appendChild(postImg);
-//	
-//}
+// adding ATTACHMENT image
+// const attachImg = new Image();
+// if (data.imageURL) {
+// 	attachImg.src = data[data.uid].imageURL;
+// } else {
+// 	attachImg.src.style.display = "none";
+// }
+// attachImg.classList.add("attach-image");
