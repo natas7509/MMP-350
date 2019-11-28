@@ -39,7 +39,6 @@ updateButton.onclick = function () {
 };
 
 
-
 const imageButton = document.getElementById('submit-image');
 imageButton.addEventListener('click', function () {
 	// get the file

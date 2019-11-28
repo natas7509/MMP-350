@@ -26,20 +26,22 @@ function publishPost() {
 	}
 
 	// push post to database
-	ref.push(post);
+	const promise = ref.push(post);
+	promise.then(function (snapshot) {
+		addImage(snapshot.key);
+	})
 
 	postText.value = ""; // reset the textarea
 }
 
-let file;
 
-function attachImage(postId) {
+function addImage(postId) {
 	// upload the file
 	const storage = firebase.storage();
 	const user = firebase.auth().currentUser;
-	const ref = storage.ref('posts').child(postId).child('post-image');
+	const storageRef = storage.ref('posts').child(postId).child('add-image');
 
-	const promise = ref.put(file);
+	const promise = storageRef.put(file);
 
 	promise.then(function (image) {
 		return image.ref.getDownloadURL();
@@ -49,3 +51,12 @@ function attachImage(postId) {
 		});
 	});
 }
+
+let file;
+
+const imageButton = document.getElementById('submit-image');
+imageButton.addEventListener('click', function () {
+	// get the file
+	file = document.getElementById('image-file').files[0];
+
+});

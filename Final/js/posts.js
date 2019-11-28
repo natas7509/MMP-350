@@ -35,6 +35,14 @@ function createPost(postData, _userData, postId) {
 	}
 	img.classList.add('profile-image');
 
+
+	if (postData.imageURL) {
+		const attachImg = new Image();
+		attachImg.src = postData.imageURL;
+		post.appendChild(attachImg);
+		attachImg.classList.add('attach-image');
+	}
+
 	/* link to the post - permanent link */
 	const postLink = document.createElement('a');
 	postLink.href = 'post.html?id=' + postId;
@@ -56,10 +64,3 @@ function createPost(postData, _userData, postId) {
 	post.appendChild(postLink);
 
 }
-
-
-// const attachImg = new Image();
-// if (data.imageURL) {
-// 	attachImg.src = data.imageURL;
-// }
-// attachImg.classList.add('attach-image');
