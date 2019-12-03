@@ -1,0 +1,13 @@
+#posts {}
+
+.post {}
+
+.post .profile-image {
+  width: 100px;
+}
+
+.post .text {}
+
+.post .author {}
+
+.post .date {}

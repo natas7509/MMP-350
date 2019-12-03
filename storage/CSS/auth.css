@@ -1,0 +1,39 @@
+#user-info {
+  display: none;
+}
+
+#profile {
+  display: none;
+}
+
+.auth #user-info {
+  display: block;
+}
+
+.auth #profile {
+  display: block;
+}
+
+.auth #user-name {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.auth #profile-image {
+  display: block;
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.auth #login {
+  display: none;
+}
+
+#write-post {
+  display: none;
+}
+
+.auth #write-post {
+  display: flex;
+}

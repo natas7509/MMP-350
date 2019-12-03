@@ -1,0 +1,35 @@
+#posts {}
+
+.post {
+  padding: 1.3rem;
+}
+
+.post .profile-image {
+  width: 100px;
+  margin: 1rem 0;
+}
+
+.post .attach-image {
+  width: 100%;
+  max-height: 400px;
+}
+
+.post .text {
+  display: block;
+}
+
+.post .author,
+.date {
+  padding: .6rem 0;
+}
+
+.post .date {
+  text-align: right;
+  padding: .6rem;
+}
+
+/* TAGS.HTML H2 */
+#main h2 {
+  color: var(--link-color);
+  padding: 1rem;
+}
