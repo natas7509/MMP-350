@@ -1,128 +1,114 @@
 @media (max-width: 414px) {
 
-  #menu {
-    grid-row: 1;
-  }
-
-
-  #social {
-    display: none;
-  }
-
-  #sidebar1-right {
-    display: none;
-  }
-
-  #sidebar1-left {
-    display: none;
-  }
-
-  #sidebar2-left {
-    display: none;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 414px) {
-	
-	body {
-		font-size: 14px;
-		line-height: 1.2;
+	#container {
+		grid-template-columns: 100%;
 	}
-	
-	.post .text {
-		line-height: 1.5;
-		font-size: 1.25em;
-	}
-	
-	#menu {
+
+	#showcase {
 		grid-column: 1;
 		grid-row: 2;
 	}
 
-	
-	#login {
-		grid-row: 3;
+	#showcase .showcase-content p {
+		font-size: 1rem;
 	}
-	
-	.auth #main {
-		grid-row: 3;	
+
+	#showcase .showcase-content .l-heading {
+		font-size: 2rem;
 	}
-	
-	#user-info {
+
+	#menu {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	#main {
+		grid-column: 1;
 		grid-row: 4;
 	}
-	
-	
-	#menu ul {
-		justify-content: space-evenly;	
+
+	.auth #main {
+		grid-column: 1;
+		grid-row: 6;
 	}
-	#menu a {
-		font-size: 1.5em;	
+
+	.post {
+		padding: .4rem;
 	}
-	#menu li {
-		flex-grow: initial;
+
+	#login,
+	#user-info {
+
+		grid-column: 1;
+		grid-row: 3;
 	}
-	
-	li#home {
-		flex-basis: auto;	
+
+
+	#profile {
+		grid-column: 1;
+		grid-row: 4;
 	}
-	
-	
-	#create-account {
-		flex-wrap: wrap;
+
+
+
+	.auth #write-post {
+		grid-column: 1;
+		grid-row: 5;
+		padding: .4rem;
 	}
-	
-	#create-account input, #create-account button {
-		flex-basis: 100%;
-		margin: 0.5em;
-		font-size: 1.5em;
+
+	#social {
+		display: none;
+	}
+
+	#sidebar1-right {
+		display: none;
+	}
+
+	#sidebar1-left {
+		display: none;
+	}
+
+	#sidebar2-left {
+		display: none;
+
 	}
 }
 
-
+/* 
 @media (min-width: 415px) and (max-width: 800px) {
 
 	#menu {
 		grid-column: 1;
 		grid-row: 2;
 	}
-	
+
 	#main {
 		grid-column: 2;
 		grid-row: 1 / span 2;
 	}
-	
-	
+
+
 	#menu ul {
 		flex-direction: column;
 	}
-	
+
 	#menu li {
 		font-size: 1.5em;
 	}
-	
 
-	
+
+
 	#create-account {
 		flex-wrap: wrap;
 	}
-	
+
 	#create-account input {
 		flex-grow: 1;
 		flex-shrink: 0;
 		flex-basis: 30%;
 	}
-	
+
 	#create-account button {
 		width: 200px;
 		margin: 1em;
