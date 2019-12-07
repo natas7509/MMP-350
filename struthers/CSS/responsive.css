@@ -33,8 +33,6 @@
 		grid-row: 4;
 	}
 
-
-
 	.post {
 		padding: .4rem;
 	}
@@ -75,7 +73,6 @@
 
 	}
 
-
 	/* AUTHS */
 
 	.auth #profile .btn {
@@ -84,7 +81,7 @@
 
 	.auth #main {
 		grid-column: 1;
-		grid-row: 6;
+		grid-row: 6 / span 2;
 	}
 
 
@@ -94,6 +91,11 @@
 		padding: .4rem;
 		align-content: center;
 		text-align: center;
+	}
+
+	/* profile page */
+	.profile-wrapper .btn {
+		width: 100%;
 	}
 }
 
