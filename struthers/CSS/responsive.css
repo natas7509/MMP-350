@@ -1,7 +1,17 @@
-@media (max-width: 414px) {
+/* MOBILE */
+@media (max-width: 500px) {
 
 	#container {
 		grid-template-columns: 100%;
+	}
+
+	.btn {
+		width: 40%;
+		text-align: center;
+	}
+
+	.auth #profile .btn {
+		width: 100%;
 	}
 
 	#showcase {
@@ -43,18 +53,25 @@
 		grid-row: 3;
 	}
 
+	#login .btn {
+
+		width: 100%;
+	}
 
 	#profile {
 		grid-column: 1;
 		grid-row: 4;
+		max-width: 350px;
+		margin: auto;
 	}
-
 
 
 	.auth #write-post {
 		grid-column: 1;
 		grid-row: 5;
 		padding: .4rem;
+		align-content: center;
+		text-align: center;
 	}
 
 	#social {
@@ -75,42 +92,36 @@
 	}
 }
 
-/* 
-@media (min-width: 415px) and (max-width: 800px) {
 
-	#menu {
-		grid-column: 1;
-		grid-row: 2;
+
+/* IPAD */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+
+	#container {
+		display: grid;
+		grid-gap: 0.2em;
+		grid-template-columns: 1fr 2fr;
 	}
 
-	#main {
-		grid-column: 2;
-		grid-row: 1 / span 2;
+	#sidebar1-left {
+		grid-column: 1/2;
+		grid-row: 3 / span 1;
+
+	}
+
+	#sidebar2-left {
+		display: none;
+	}
+
+	.auth #social {
+		grid-column: 1/2;
+		grid-row: 7;
+		border: none;
+	}
+
+	#sidebar1-right {
+		display: none;
 	}
 
 
-	#menu ul {
-		flex-direction: column;
-	}
-
-	#menu li {
-		font-size: 1.5em;
-	}
-
-
-
-	#create-account {
-		flex-wrap: wrap;
-	}
-
-	#create-account input {
-		flex-grow: 1;
-		flex-shrink: 0;
-		flex-basis: 30%;
-	}
-
-	#create-account button {
-		width: 200px;
-		margin: 1em;
-	}
 } */
