@@ -105,9 +105,6 @@ input,
 #sidebar1-left {
 	grid-column: 1/2;
 	grid-row: 6 / span 2;
-	border: #ccc solid 1px;
-
-
 }
 
 #sidebar2-left {

@@ -12,12 +12,13 @@ button:focus {
 
 input {
   border-bottom: 1px solid black;
+  width: 100%;
 }
 
-#header {
+/* #header {
   grid-column: 2/3;
   grid-row: 2/3;
-}
+} */
 
 #header h1 {
   color: #f4f4f4;
