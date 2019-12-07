@@ -1,5 +1,5 @@
 /* MOBILE */
-@media (max-width: 500px) {
+@media (max-width: 767px) {
 
 	#container {
 		grid-template-columns: 100%;
@@ -8,10 +8,6 @@
 	.btn {
 		width: 40%;
 		text-align: center;
-	}
-
-	.auth #profile .btn {
-		width: 100%;
 	}
 
 	#showcase {
@@ -37,10 +33,7 @@
 		grid-row: 4;
 	}
 
-	.auth #main {
-		grid-column: 1;
-		grid-row: 6;
-	}
+
 
 	.post {
 		padding: .4rem;
@@ -65,15 +58,6 @@
 		margin: auto;
 	}
 
-
-	.auth #write-post {
-		grid-column: 1;
-		grid-row: 5;
-		padding: .4rem;
-		align-content: center;
-		text-align: center;
-	}
-
 	#social {
 		display: none;
 	}
@@ -90,38 +74,82 @@
 		display: none;
 
 	}
+
+
+	/* AUTHS */
+
+	.auth #profile .btn {
+		width: 100%;
+	}
+
+	.auth #main {
+		grid-column: 1;
+		grid-row: 6;
+	}
+
+
+	.auth #write-post {
+		grid-column: 1;
+		grid-row: 5;
+		padding: .4rem;
+		align-content: center;
+		text-align: center;
+	}
 }
 
 
 
 /* IPAD */
-/* @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
 	#container {
 		display: grid;
-		grid-gap: 0.2em;
 		grid-template-columns: 1fr 2fr;
+	}
+
+	#social {
+		grid-column: 1/2;
+		grid-row: 5;
+		border: none;
+		margin-top: 2rem;
 	}
 
 	#sidebar1-left {
 		grid-column: 1/2;
-		grid-row: 3 / span 1;
+		grid-row: 3 / span 2;
 
 	}
 
 	#sidebar2-left {
-		display: none;
-	}
-
-	.auth #social {
 		grid-column: 1/2;
 		grid-row: 7;
-		border: none;
 	}
 
 	#sidebar1-right {
-		display: none;
+		grid-column: 1/2;
+		grid-row: 8;
 	}
 
 
-} */
+
+	/* AUTHS */
+	.auth #social {
+		grid-column: 1/2;
+		grid-row: 9;
+		border: none;
+		margin-top: 2rem;
+	}
+
+	.auth #sidebar1-right {
+		grid-column: 1/2;
+		grid-row: 11;
+	}
+
+	.auth #sidebar2-left {
+		grid-column: 1/2;
+		grid-row: 10;
+	}
+
+
+
+}
