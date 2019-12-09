@@ -41,6 +41,17 @@ header {
 	flex-direction: column;
 }
 
+#create-container .create-items {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+#create-container {
+	grid-column: 1/4;
+	grid-row: 3;
+}
+
 input,
 .btn {
 	margin-bottom: 1rem;
@@ -51,6 +62,8 @@ input,
 	grid-column: 2/4;
 	grid-row: 4 / span 3;
 }
+
+
 
 #profile {
 	grid-column: 1/2;
