@@ -13,7 +13,7 @@ serif;
 	--link-font: var(--display-font);
 }
 body {
-	font-family: var(--display-font);
+	font-family: var(--text-font);
 }
 #menu ul a,
 #social ul li {
@@ -24,9 +24,10 @@ header {
 	font-size: 3vmin;
 }
 .post .author {
+	font-family: var(--display-font);
 	font-size: 1.5vmax;
 	text-transform: uppercase;
-	letter-spacing: .5px;
+	letter-spacing: .6px;
 }
 .post .date {
 	font-size: 2.3vmin;
@@ -38,4 +39,7 @@ header {
 }
 #users .user a {
 	font-size: 2vmax;
+}
+.btn {
+	font-family: var(--display-font);
 }
