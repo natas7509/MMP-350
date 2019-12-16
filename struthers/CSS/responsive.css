@@ -98,6 +98,10 @@
 		text-align: center;
 	}
 
+	.auth #write-post .btn {
+		width: 100%;
+	}
+
 	.auth #write-post #post-text {
 		margin-bottom: 1rem;
 	}
@@ -151,7 +155,7 @@
 	#social {
 		grid-column: 1/2;
 		grid-row: 5 / span 3;
-		border: none;
+		border: solid 3px var(--accent-three);
 		margin-top: 2rem;
 	}
 
@@ -168,7 +172,6 @@
 	.auth #social {
 		grid-column: 1/2;
 		grid-row: 7;
-		border: none;
 		margin-top: 2rem;
 	}
 }
