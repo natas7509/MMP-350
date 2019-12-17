@@ -23,6 +23,19 @@ body {
 header {
 	font-size: 3vmin;
 }
+#tagTitle {
+	font-family: var(--display-font);
+}
+#sidebar1-right h1 {
+	font-family: var(--display-font);
+}
+#sidebar2-left .embedly-card {
+	font-family: var(--text-font);
+}
+#sidebar2-left .embedly-card a {
+	font-family: var(--display-font);
+	font-size: 1.5rem;
+}
 .post .author {
 	font-family: var(--display-font);
 	font-size: 1.5vmax;
