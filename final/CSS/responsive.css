@@ -41,7 +41,7 @@
 
 	#main {
 		grid-column: 1;
-		grid-row: 4;
+		grid-row: 6;
 	}
 
 	#create-container .create-items {
@@ -69,7 +69,9 @@
 	}
 
 	#social {
-		display: none;
+		grid-column: 1;
+		grid-row: 4;
+		border: none;
 	}
 
 	#sidebar1-right {
@@ -89,15 +91,21 @@
 	}
 
 	/* AUTHS */
-	.auth #profile .btn {
+	/* .auth #profile .btn {
 		width: 100%;
-	}
+	} */
 
 	.auth #main {
 		grid-column: 1;
-		grid-row: 6 / span 2;
+		grid-row: 8;
 	}
 
+	.auth .users-container {
+		grid-column: 2/4;
+		grid-row: 8 / span 5 !important;
+	}
+
+	/*
 	.auth #write-post {
 		grid-column: 1;
 		grid-row: 4;
@@ -112,6 +120,12 @@
 
 	.auth #write-post #post-text {
 		margin-bottom: 1rem;
+	}*/
+
+	.auth #social {
+		grid-column: 1;
+		grid-row: 6 / span 2;
+		border: none;
 	}
 
 	/* PROFILE PAGE */
