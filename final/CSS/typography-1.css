@@ -29,10 +29,12 @@ header {
 
 .l-heading {
 	font-family: var(--display-font);
+	font-size: 1.5vmax;
 }
 
 #tagTitle .l-heading {
 	font-family: var(--display-font);
+	font-size: 2.5vmax;
 }
 
 #sidebar1-right h1 {
