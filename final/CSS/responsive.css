@@ -25,6 +25,10 @@
 		grid-column: 1;
 		grid-row: 1;
 	}
+	#menu img {
+		width: 90px;
+		margin: 0;
+	}
 	#profile {
 		grid-column: 1;
 		grid-row: 4;
