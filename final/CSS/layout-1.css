@@ -28,6 +28,10 @@ header {
 #tagTitle {
 	border: solid 1px var(--accent-three);
 }
+#tagTitle .l-heading {
+	margin: 0;
+	padding: 1rem;
+}
 #login,
 #user-info {
 	grid-column: 2/4;

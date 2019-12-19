@@ -72,9 +72,6 @@
 		display: none;
 	}
 	/* AUTHS */
-	/* .auth #profile .btn {
-		width: 100%;
-	} */
 	.auth #main {
 		grid-column: 1;
 		grid-row: 8;
@@ -87,22 +84,6 @@
 		grid-column: 2/4;
 		grid-row: 8 / span 5 !important;
 	}
-	/*
-	.auth #write-post {
-		grid-column: 1;
-		grid-row: 4;
-		padding: .4rem;
-		align-content: center;
-		text-align: center;
-	}
-
-	.auth #write-post .btn {
-		width: 100%;
-	}
-
-	.auth #write-post #post-text {
-		margin-bottom: 1rem;
-	}*/
 	.auth #social {
 		grid-column: 1;
 		grid-row: 6 / span 2;
