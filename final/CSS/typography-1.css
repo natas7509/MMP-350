@@ -55,6 +55,10 @@ header {
 #login {
 	font-family: var(--text-font);
 }
+#post-text {
+	font-family: var(--text-font);
+	font-size: 2.3vmin;
+}
 #users .user a {
 	font-size: 2vmax;
 }
