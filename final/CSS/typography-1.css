@@ -57,7 +57,7 @@ header {
 }
 #post-text {
 	font-family: var(--text-font);
-	font-size: 1.6vmin;
+	font-size: 1.8vmin;
 	padding: .6rem;
 }
 #users .user a {
