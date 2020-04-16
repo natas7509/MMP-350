@@ -8,6 +8,15 @@
   text-align: left;
 }
 
+#contact {
+  display: block;
+  text-align: center;
+}
+
+#contact .map {
+  height: 500px;
+}
+
 /* Position Icon */
 
 #what .items .item i {
@@ -23,8 +32,12 @@
     align-items: center;
   }
 
+  #navbar ul li a {
+    margin-right: 0.5rem;
+  }
+
   #navbar .logo {
-    margin: 1rem;
+    margin: 2rem 0;
     text-align: center;
   }
 
@@ -33,7 +46,7 @@
     /* Overlay */
     position: absolute;
     /* height: -2px; */
-    top: 158px;
+    top: 190px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -43,7 +56,7 @@
 
   #showcase .showcase-content .lead {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
   }
 
   #who {
@@ -52,6 +65,15 @@
 
   #who .who-img {
     height: 300px;
+  }
+
+  #what .items .item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #what .items .item i {
+    margin: 0.5rem;
   }
 
   #clients .items img {
@@ -74,5 +96,3 @@
     font-size: 12px;
   }
 }
-
-/* End-500px */

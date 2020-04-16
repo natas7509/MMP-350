@@ -180,7 +180,7 @@ p {
 }
 
 #navbar .logo h1 {
-  margin: auto;
+  margin: auto -7px;
   font-weight: 100;
 }
 
@@ -263,19 +263,12 @@ p {
   flex: 1;
 }
 
-#contact .contact-form .form-group {
-  margin: 0.75rem;
-}
-
-#contact .contact-form label {
-  display: block;
+.form-group {
+  margin: 0.75rem auto;
 }
 
 #contact .contact-form input,
 #contact .contact-form textarea {
-  /* max-width: 80%; */
   width: 100%;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  /* margin: auto; */
+  padding: 0.3rem;
 }
