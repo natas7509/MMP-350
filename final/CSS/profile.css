@@ -7,7 +7,7 @@
 
 #add-image p {
   padding: 1rem 0;
-  color: var(--link-color);
+  color: var(--bgDrk);
   font-size: inherit;
 }
 
@@ -17,13 +17,13 @@
 }
 
 #profile-name {
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .input-icons i {
   position: absolute;
   margin-bottom: 2px;
-  line-height: .2;
+  line-height: 0.2;
 }
 
 .input-icons {

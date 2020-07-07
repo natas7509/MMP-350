@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  #container {
+    display: block;
+  }
+
+  #onion-left {
+    display: none;
+  }
+
+  #sidebar-right {
+    display: none;
+  }
+
+  #container {
+    display: block;
+  }
+
+  .auth .onion-left {
+    display: block;
+  }
+}
